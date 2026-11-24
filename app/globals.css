@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@700;800;900&family=Inter+Tight:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg: #FFFFFF;
+    --paper: #F7F6F4;
+    --tile: #F2F0EC;
+    --ink: #0B0B0B;
+    --muted: #8A8A85;
+    --hair: #E6E3DE;
+    --red: #E10600;
+    --green: #1E9E5A;
+
+    --font-display: 'Archivo', 'Inter Tight', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-body: 'Manrope', 'Inter Tight', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-mono: 'Space Grotesk', ui-monospace, SFMono-Regular, monospace;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  background-color: var(--bg);
+  color: var(--ink);
+  overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--ink);
+  min-height: 100dvh;
+  overflow-x: hidden;
+}
+
+/* Hairline helpers */
+.border-hair {
+  border-color: var(--hair);
+}
+.divide-hair > :not([hidden]) ~ :not([hidden]) {
+  border-color: var(--hair);
+}
+
+/* Safe area padding utilities */
+.safe-pb {
+  padding-bottom: max(env(safe-area-inset-bottom, 16px), 16px);
+}
+.safe-pt {
+  padding-top: max(env(safe-area-inset-top, 0px), 0px);
+}
+
+/* Hide scrollbar */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: var(--ink);
+  color: #FFFFFF;
+  border: 1px solid var(--ink);
+  border-radius: 4px;
+  font-family: var(--font-body);
+  font-weight: 600;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.btn-primary:hover {
+  background-color: var(--red);
+  border-color: var(--red);
+  color: #FFFFFF;
+}
+
+.tap-active:active {
+  transform: scale(0.97);
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "VEER STUDIOS — Premium Men's Streetwear",
+  "short_name": "VEER",
+  "description": "Quiet luxury meets modern streetwear for men. Mobile-first drops, oversized fits, and co-ords.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0B0B0C",
+  "theme_color": "#0B0B0C",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/brand/logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
