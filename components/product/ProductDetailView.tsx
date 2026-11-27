@@ -70,7 +70,7 @@ export function ProductDetailView({ product, relatedProducts }: ProductDetailVie
             {/* Mobile View */}
             <div className="relative w-full aspect-[4/5] bg-tile sm:rounded-lg overflow-hidden sm:border border-hair">
               <Image
-                src={product.images[activeImageIndex]?.url || product.images[0]?.url || "/images/pdp-detail-1.jpg"}
+                src={product.images[activeImageIndex]?.url || product.images[0]?.url || "/images/5-sleeve/1.jpeg"}
                 alt={product.name}
                 fill
                 priority

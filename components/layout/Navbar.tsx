@@ -14,11 +14,10 @@ import { cn } from "@/lib/utils";
 
 const NAV_CHIPS = [
   { label: "New In", href: "/shop?sort=newest" },
-  { label: "Tees", href: "/category/t-shirts" },
-  { label: "Oversized", href: "/category/oversized-tees" },
+  { label: "5-Sleeve", href: "/category/5-sleeve" },
+  { label: "Hoodies", href: "/category/hoodies" },
+  { label: "Pants", href: "/category/pants" },
   { label: "Shirts", href: "/category/shirts" },
-  { label: "Bottoms", href: "/category/trousers" },
-  { label: "Outerwear", href: "/category/jackets" },
   { label: "Sale", href: "/category/sale", isSale: true },
 ];
 

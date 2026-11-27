@@ -401,7 +401,7 @@ export default function CheckoutPage() {
                   <div key={item.variant.id} className="py-3 flex gap-3">
                     <div className="relative w-12 h-14 bg-tile rounded-[2px] overflow-hidden flex-shrink-0 border border-hair">
                       <Image
-                        src={item.product.images[0]?.url || "/images/drop-1.jpg"}
+                        src={item.product.images[0]?.url || "/images/5-sleeve/1.jpeg"}
                         alt={item.product.name}
                         fill
                         sizes="50px"

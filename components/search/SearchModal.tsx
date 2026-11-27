@@ -143,7 +143,7 @@ export function SearchModal() {
                           >
                             <div className="relative w-14 h-16 bg-tile rounded-[2px] overflow-hidden flex-shrink-0">
                               <Image
-                                src={product.images[0]?.url || "/images/drop-1.jpg"}
+                                src={product.images[0]?.url || "/images/5-sleeve/1.jpeg"}
                                 alt={product.name}
                                 fill
                                 sizes="60px"

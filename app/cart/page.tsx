@@ -88,7 +88,7 @@ export default function CartPage() {
                 <div key={item.variant.id} className="py-5 flex gap-4 sm:gap-6">
                   <div className="relative w-20 h-24 bg-tile rounded-[4px] overflow-hidden flex-shrink-0 border border-hair">
                     <Image
-                      src={item.product.images[0]?.url || "/images/drop-1.jpg"}
+                      src={item.product.images[0]?.url || "/images/5-sleeve/1.jpeg"}
                       alt={item.product.name}
                       fill
                       sizes="90px"

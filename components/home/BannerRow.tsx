@@ -9,14 +9,14 @@ export function BannerRow() {
     <section className="py-6 sm:py-10 bg-white border-b border-hair">
       <div className="max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-10">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
-          {/* Banner 1: Oversized Tees */}
+          {/* Banner 1: 5-Sleeve Tees */}
           <Link
-            href="/category/oversized-tees"
+            href="/category/5-sleeve"
             className="group relative aspect-[16/9] sm:aspect-[21/9] rounded-[4px] overflow-hidden bg-tile border border-hair"
           >
             <Image
-              src="/images/cat-oversized.jpg"
-              alt="Oversized Tees"
+              src="/images/5-sleeve/10-949.jpeg"
+              alt="5-Sleeve Tees"
               fill
               sizes="(max-width: 768px) 100vw, 50vw"
               className="object-cover transition-transform duration-500 group-hover:scale-105"
@@ -26,23 +26,23 @@ export function BannerRow() {
                 EVERYDAY DROP
               </span>
               <h3 className="font-display font-extrabold text-xl sm:text-2xl uppercase tracking-tight">
-                OVERSIZED TEES — FROM ₹499
+                5-SLEEVE TEES — FROM ₹799
               </h3>
               <div className="flex items-center gap-1 text-xs font-mono font-bold mt-2 text-white/90 group-hover:text-white">
-                <span>Shop Now</span>
+                <span>Shop 5-Sleeve</span>
                 <ArrowRight className="w-3.5 h-3.5 text-red transition-transform group-hover:translate-x-1" />
               </div>
             </div>
           </Link>
 
-          {/* Banner 2: Co-ord Sets */}
+          {/* Banner 2: Heavyweight Hoodies */}
           <Link
-            href="/category/co-ord-sets"
+            href="/category/hoodies"
             className="group relative aspect-[16/9] sm:aspect-[21/9] rounded-[4px] overflow-hidden bg-tile border border-hair"
           >
             <Image
-              src="/images/cat-coords.jpg"
-              alt="Co-ord Sets"
+              src="/images/Hoodies/4-1199.jpeg"
+              alt="Heavyweight Hoodies"
               fill
               sizes="(max-width: 768px) 100vw, 50vw"
               className="object-cover transition-transform duration-500 group-hover:scale-105"
@@ -52,10 +52,10 @@ export function BannerRow() {
                 STUDIO SPECIAL
               </span>
               <h3 className="font-display font-extrabold text-xl sm:text-2xl uppercase tracking-tight">
-                CO-ORD SETS — FLAT 40% OFF
+                HEAVY FLEECE HOODIES — ₹1,199
               </h3>
               <div className="flex items-center gap-1 text-xs font-mono font-bold mt-2 text-white/90 group-hover:text-white">
-                <span>Explore Sets</span>
+                <span>Explore Hoodies</span>
                 <ArrowRight className="w-3.5 h-3.5 text-red transition-transform group-hover:translate-x-1" />
               </div>
             </div>

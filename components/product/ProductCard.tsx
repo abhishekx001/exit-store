@@ -24,7 +24,7 @@ export function ProductCard({
   const favorited = isFavourite(product.id);
 
   const primaryImage =
-    product.images[0]?.url || "/images/prod-boxy-black.jpg";
+    product.images[0]?.url || "/images/5-sleeve/1.jpeg";
   const hoverImage = product.images[1]?.url || primaryImage;
 
   const handleToggleFav = (e: React.MouseEvent) => {

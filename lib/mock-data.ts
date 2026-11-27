@@ -2,351 +2,2834 @@ import { Product, Category, Reel, Banner, Coupon } from "@/types";
 
 export const MOCK_CATEGORIES: Category[] = [
   {
-    id: "cat-1",
-    name: "Oversized",
-    slug: "oversized-tees",
-    image_url: "/images/cat-oversized.jpg",
-    sort_order: 1,
-    is_active: true,
-    item_count: 8,
+    "id": "cat-5-sleeve",
+    "name": "5-Sleeve",
+    "slug": "5-sleeve",
+    "image_url": "/images/5-sleeve/1.jpeg",
+    "sort_order": 1,
+    "is_active": true,
+    "item_count": 23
   },
   {
-    id: "cat-2",
-    name: "Tees",
-    slug: "t-shirts",
-    image_url: "/images/cat-tees.jpg",
-    sort_order: 2,
-    is_active: true,
-    item_count: 6,
+    "id": "cat-hoodies",
+    "name": "Hoodies",
+    "slug": "hoodies",
+    "image_url": "/images/Hoodies/1-1199.jpeg",
+    "sort_order": 2,
+    "is_active": true,
+    "item_count": 9
   },
   {
-    id: "cat-3",
-    name: "Shirts",
-    slug: "shirts",
-    image_url: "/images/cat-shirts.jpg",
-    sort_order: 3,
-    is_active: true,
-    item_count: 6,
+    "id": "cat-pants",
+    "name": "Pants",
+    "slug": "pants",
+    "image_url": "/images/pants/1-1149.jpeg",
+    "sort_order": 3,
+    "is_active": true,
+    "item_count": 6
   },
   {
-    id: "cat-4",
-    name: "Cargos",
-    slug: "trousers",
-    image_url: "/images/cat-cargos.jpg",
-    sort_order: 4,
-    is_active: true,
-    item_count: 6,
+    "id": "cat-shirts",
+    "name": "Shirts",
+    "slug": "shirts",
+    "image_url": "/images/shirts/1-1199.jpeg",
+    "sort_order": 4,
+    "is_active": true,
+    "item_count": 3
   },
   {
-    id: "cat-5",
-    name: "Co-ords",
-    slug: "co-ord-sets",
-    image_url: "/images/cat-coords.jpg",
-    sort_order: 5,
-    is_active: true,
-    item_count: 4,
-  },
-  {
-    id: "cat-6",
-    name: "Jackets",
-    slug: "jackets",
-    image_url: "/images/cat-jackets.jpg",
-    sort_order: 6,
-    is_active: true,
-    item_count: 4,
-  },
-  {
-    id: "cat-7",
-    name: "Hoodies",
-    slug: "hoodies",
-    image_url: "/images/prod-hoodie-charcoal.jpg",
-    sort_order: 7,
-    is_active: true,
-    item_count: 4,
-  },
-  {
-    id: "cat-8",
-    name: "Sale Archive",
-    slug: "sale",
-    image_url: "/images/prod-acid-drop.jpg",
-    sort_order: 8,
-    is_active: true,
-    item_count: 8,
-  },
+    "id": "cat-sale",
+    "name": "Sale",
+    "slug": "sale",
+    "image_url": "/images/5-sleeve/5-799.jpeg",
+    "sort_order": 5,
+    "is_active": true,
+    "item_count": 10
+  }
 ];
 
 export const MOCK_PRODUCTS: Product[] = [
-  {
-    id: "prod-1",
-    name: "Heavyweight Boxy Tee",
-    slug: "heavyweight-boxy-t-shirt",
-    description: "Boxy oversized fit with dropped shoulders and a high-density 1-inch ribbed crew neck. Designed for an effortless street silhouette with dense 280 GSM combed cotton.",
-    fabric: "100% Super Combed Cotton, 280 GSM French Terry jersey. Pre-shrunk and bio-washed.",
-    care: "Machine wash cold with like colors. Line dry in shade.",
-    category_id: "cat-1",
-    price: 799,
-    compare_at_price: 1499,
-    discount_percent: 47,
-    tags: ["Oversized Fit • Carbon", "heavyweight", "boxy", "terry"],
-    is_featured: true,
-    is_new: true,
-    is_bestseller: true,
-    is_active: true,
-    created_at: "2026-03-01T10:00:00Z",
-    images: [
-      { id: "img-1-1", url: "/images/pdp-detail-1.jpg", alt: "Heavyweight Boxy Tee Front", sort_order: 1 },
-      { id: "img-1-2", url: "/images/pdp-detail-2.jpg", alt: "Heavyweight Boxy Tee Back View", sort_order: 2 },
-      { id: "img-1-3", url: "/images/pdp-detail-3.jpg", alt: "Heavyweight Cotton Texture", sort_order: 3 },
-      { id: "img-1-4", url: "/images/pdp-detail-4.jpg", alt: "Streetwear Lookbook", sort_order: 4 },
-    ],
-    variants: [
-      { id: "var-1-s", size: "S", color: "Pitch Black", color_hex: "#111111", sku: "BOX-BLK-S", stock: 12 },
-      { id: "var-1-m", size: "M", color: "Pitch Black", color_hex: "#111111", sku: "BOX-BLK-M", stock: 24 },
-      { id: "var-1-l", size: "L", color: "Pitch Black", color_hex: "#111111", sku: "BOX-BLK-L", stock: 18 },
-      { id: "var-1-xl", size: "XL", color: "Pitch Black", color_hex: "#111111", sku: "BOX-BLK-XL", stock: 8 },
-    ],
-    category: MOCK_CATEGORIES[0],
-  },
-  {
-    id: "prod-2",
-    name: "Acid Wash Drop Tee",
-    slug: "architectural-dropped-tee",
-    description: "Drop shoulder silhouette with subtle acid-wash patina. Tailored with concealed tonal stitching and deep vented hemline for everyday layering.",
-    fabric: "260 GSM Dense Organic Cotton with enzyme stonewash treatment.",
-    care: "Gentle cold cycle. Do not bleach.",
-    category_id: "cat-2",
-    price: 899,
-    compare_at_price: 1599,
-    discount_percent: 44,
-    tags: ["Drop Shoulder • Washed", "acid wash", "tee", "drop"],
-    is_featured: true,
-    is_new: false,
-    is_bestseller: true,
-    is_active: true,
-    created_at: "2026-02-28T10:00:00Z",
-    images: [
-      { id: "img-2-1", url: "/images/prod-acid-drop.jpg", alt: "Acid Wash Drop Tee", sort_order: 1 },
-      { id: "img-2-2", url: "/images/prod-boxy-black.jpg", alt: "Acid Wash Angle", sort_order: 2 },
-    ],
-    variants: [
-      { id: "var-2-m", size: "M", color: "Washed Carbon", color_hex: "#333333", sku: "ACD-WSH-M", stock: 20 },
-      { id: "var-2-l", size: "L", color: "Washed Carbon", color_hex: "#333333", sku: "ACD-WSH-L", stock: 25 },
-      { id: "var-2-xl", size: "XL", color: "Washed Carbon", color_hex: "#333333", sku: "ACD-WSH-XL", stock: 12 },
-    ],
-    category: MOCK_CATEGORIES[1],
-  },
-  {
-    id: "prod-3",
-    name: "Relaxed Linen Shirt",
-    slug: "textured-open-weave-camp-shirt",
-    description: "Relaxed resort collar linen-blend shirt with clean French placket. Breathable textured open weave suited for warm evenings.",
-    fabric: "Pure Belgian Flax & Combed Cotton Blend",
-    care: "Hand wash cold or gentle machine wash.",
-    category_id: "cat-3",
-    price: 1199,
-    compare_at_price: 2199,
-    discount_percent: 45,
-    tags: ["Boxy Cut • Off-White", "linen", "camp-collar", "resort"],
-    is_featured: true,
-    is_new: true,
-    is_bestseller: true,
-    is_active: true,
-    created_at: "2026-02-20T10:00:00Z",
-    images: [
-      { id: "img-3-1", url: "/images/prod-linen-shirt.jpg", alt: "Relaxed Linen Shirt", sort_order: 1 },
-      { id: "img-3-2", url: "/images/cat-shirts.jpg", alt: "Linen Shirt Flat", sort_order: 2 },
-    ],
-    variants: [
-      { id: "var-3-s", size: "S", color: "Chalk Ecru", color_hex: "#EFECE6", sku: "LIN-ECR-S", stock: 8 },
-      { id: "var-3-m", size: "M", color: "Chalk Ecru", color_hex: "#EFECE6", sku: "LIN-ECR-M", stock: 16 },
-      { id: "var-3-l", size: "L", color: "Chalk Ecru", color_hex: "#EFECE6", sku: "LIN-ECR-L", stock: 14 },
-    ],
-    category: MOCK_CATEGORIES[2],
-  },
-  {
-    id: "prod-4",
-    name: "Utility Cargo Pants",
-    slug: "wide-leg-double-pleat-trousers",
-    description: "Tactical utility cargo trousers with functional deep multi-pockets and relaxed wide puddle hem. Extended tailored waistband with hidden metal tab fastening.",
-    fabric: "High-density Cotton Twill with reinforced ripstop knee panels.",
-    care: "Machine wash cold. Hang to dry.",
-    category_id: "cat-4",
-    price: 1499,
-    compare_at_price: 2799,
-    discount_percent: 46,
-    tags: ["Relaxed Fit • Olive", "cargo", "tactical", "utility"],
-    is_featured: true,
-    is_new: false,
-    is_bestseller: true,
-    is_active: true,
-    created_at: "2026-02-18T10:00:00Z",
-    images: [
-      { id: "img-4-1", url: "/images/prod-utility-cargo.jpg", alt: "Utility Cargo Pants", sort_order: 1 },
-      { id: "img-4-2", url: "/images/cat-cargos.jpg", alt: "Cargo Flat", sort_order: 2 },
-    ],
-    variants: [
-      { id: "var-4-30", size: "30", color: "Army Olive", color_hex: "#4D5443", sku: "CRG-OLV-30", stock: 10 },
-      { id: "var-4-32", size: "32", color: "Army Olive", color_hex: "#4D5443", sku: "CRG-OLV-32", stock: 18 },
-      { id: "var-4-34", size: "34", color: "Army Olive", color_hex: "#4D5443", sku: "CRG-OLV-34", stock: 12 },
-      { id: "var-4-36", size: "36", color: "Army Olive", color_hex: "#4D5443", sku: "CRG-OLV-36", stock: 6 },
-    ],
-    category: MOCK_CATEGORIES[3],
-  },
-  {
-    id: "prod-5",
-    name: "Core Drop Shoulder Tee",
-    slug: "raw-cotton-studio-chore-overshirt",
-    description: "Everyday heavyweight boxy t-shirt in washed vintage cream. Clean neckline binding with dropped shoulders.",
-    fabric: "240 GSM Combed Jersey Cotton",
-    care: "Machine wash cold. Line dry.",
-    category_id: "cat-1",
-    price: 749,
-    compare_at_price: 1249,
-    discount_percent: 40,
-    tags: ["Drop Shoulder • Cream", "cream", "basics"],
-    is_featured: true,
-    is_new: true,
-    is_bestseller: false,
-    is_active: true,
-    created_at: "2026-03-02T10:00:00Z",
-    images: [
-      { id: "img-5-1", url: "/images/prod-drop-cream.jpg", alt: "Core Drop Shoulder Tee", sort_order: 1 },
-      { id: "img-5-2", url: "/images/cat-tees.jpg", alt: "Tee Flat", sort_order: 2 },
-    ],
-    variants: [
-      { id: "var-5-m", size: "M", color: "Vintage Cream", color_hex: "#F4F1EA", sku: "DRP-CRM-M", stock: 14 },
-      { id: "var-5-l", size: "L", color: "Vintage Cream", color_hex: "#F4F1EA", sku: "DRP-CRM-L", stock: 18 },
-      { id: "var-5-xl", size: "XL", color: "Vintage Cream", color_hex: "#F4F1EA", sku: "DRP-CRM-XL", stock: 10 },
-    ],
-    category: MOCK_CATEGORIES[0],
-  },
-  {
-    id: "prod-6",
-    name: "Parachute Cargo Pant",
-    slug: "belgian-flax-relaxed-linen-pant",
-    description: "Relaxed baggy parachute cargo trousers in pitch black with toggle drawcord cuffs and knee dart volume.",
-    fabric: "Matte Technical Nylon & Cotton Weave",
-    care: "Warm wash. Quick dry.",
-    category_id: "cat-4",
-    price: 1499,
-    compare_at_price: 2499,
-    discount_percent: 40,
-    tags: ["Baggy Cut • Black", "parachute", "cargo", "black"],
-    is_featured: false,
-    is_new: false,
-    is_bestseller: true,
-    is_active: true,
-    created_at: "2026-01-20T10:00:00Z",
-    images: [
-      { id: "img-6-1", url: "/images/prod-parachute-cargo.jpg", alt: "Parachute Cargo Pant", sort_order: 1 },
-      { id: "img-6-2", url: "/images/cat-cargos.jpg", alt: "Cargo Flat", sort_order: 2 },
-    ],
-    variants: [
-      { id: "var-6-30", size: "30", color: "Pitch Black", color_hex: "#111111", sku: "PAR-BLK-30", stock: 8 },
-      { id: "var-6-32", size: "32", color: "Pitch Black", color_hex: "#111111", sku: "PAR-BLK-32", stock: 15 },
-      { id: "var-6-34", size: "34", color: "Pitch Black", color_hex: "#111111", sku: "PAR-BLK-34", stock: 11 },
-      { id: "var-6-36", size: "36", color: "Pitch Black", color_hex: "#111111", sku: "PAR-BLK-36", stock: 4 },
-    ],
-    category: MOCK_CATEGORIES[3],
-  },
-  {
-    id: "prod-7",
-    name: "Heavy Fleece Zip Hoodie",
-    slug: "minimal-ribbed-daily-vest",
-    description: "Architectural 400 GSM heavyweight French Terry zip hoodie with double-layer hood and structured ribbed cuffs.",
-    fabric: "400 GSM 100% Combed Heavyweight Fleece",
-    care: "Cold gentle wash. Lay flat.",
-    category_id: "cat-7",
-    price: 1799,
-    compare_at_price: 2999,
-    discount_percent: 40,
-    tags: ["Fleece 400 GSM • Black", "hoodie", "fleece", "outerwear"],
-    is_featured: false,
-    is_new: true,
-    is_bestseller: false,
-    is_active: true,
-    created_at: "2026-03-05T10:00:00Z",
-    images: [
-      { id: "img-7-1", url: "/images/prod-hoodie-charcoal.jpg", alt: "Heavy Fleece Zip Hoodie", sort_order: 1 },
-      { id: "img-7-2", url: "/images/cat-jackets.jpg", alt: "Hoodie Detail", sort_order: 2 },
-    ],
-    variants: [
-      { id: "var-7-s", size: "S", color: "Vintage Charcoal", color_hex: "#242426", sku: "HOD-CHR-S", stock: 8 },
-      { id: "var-7-m", size: "M", color: "Vintage Charcoal", color_hex: "#242426", sku: "HOD-CHR-M", stock: 16 },
-      { id: "var-7-l", size: "L", color: "Vintage Charcoal", color_hex: "#242426", sku: "HOD-CHR-L", stock: 12 },
-      { id: "var-7-xl", size: "XL", color: "Vintage Charcoal", color_hex: "#242426", sku: "HOD-CHR-XL", stock: 5 },
-    ],
-    category: MOCK_CATEGORIES[6],
-  },
-  {
-    id: "prod-8",
-    name: "Textured Knit Co-ord Set",
-    slug: "structured-studio-co-ord-set",
-    description: "Two-piece matching relaxed streetwear co-ord set in textured waffle knit beige against soft studio lighting.",
-    fabric: "100% Micro-Twill Heavyweight Cotton",
-    care: "Gentle machine wash with like colors.",
-    category_id: "cat-5",
-    price: 1699,
-    compare_at_price: 2799,
-    discount_percent: 39,
-    tags: ["Waffle Knit • Sand", "co-ord", "set", "summer"],
-    is_featured: true,
-    is_new: true,
-    is_bestseller: true,
-    is_active: true,
-    created_at: "2026-03-04T10:00:00Z",
-    images: [
-      { id: "img-8-1", url: "/images/cat-coords.jpg", alt: "Textured Knit Co-ord Set", sort_order: 1 },
-      { id: "img-8-2", url: "/images/cat-shirts.jpg", alt: "Co-ord Set Angle", sort_order: 2 },
-    ],
-    variants: [
-      { id: "var-8-s", size: "S", color: "Sand Ecru", color_hex: "#D8D2C5", sku: "CRD-SND-S", stock: 7 },
-      { id: "var-8-m", size: "M", color: "Sand Ecru", color_hex: "#D8D2C5", sku: "CRD-SND-M", stock: 16 },
-      { id: "var-8-l", size: "L", color: "Sand Ecru", color_hex: "#D8D2C5", sku: "CRD-SND-L", stock: 12 },
-      { id: "var-8-xl", size: "XL", color: "Sand Ecru", color_hex: "#D8D2C5", sku: "CRD-SND-XL", stock: 4 },
-    ],
-    category: MOCK_CATEGORIES[4],
-  },
+{
+  "id": "prod-sleeve-01",
+  "name": "Boxy 5-Sleeve Tee 01",
+  "slug": "5-sleeve-tee-01",
+  "description": "Boxy 5-Sleeve Tee 01 crafted with high-density combed jersey cotton. Boxy drop-shoulder silhouette cut with everyday relaxed drape.",
+  "fabric": "100% Super Combed 260-280 GSM Cotton. Pre-shrunk & bio-washed.",
+  "care": "Machine wash cold with like colors. Line dry in shade.",
+  "category_id": "cat-5-sleeve",
+  "price": 849,
+  "compare_at_price": 1399,
+  "discount_percent": 39,
+  "tags": [
+    "Heavyweight • Black",
+    "5-sleeve",
+    "heavyweight",
+    "oversized"
+  ],
+  "is_featured": true,
+  "is_new": true,
+  "is_bestseller": true,
+  "is_active": true,
+  "created_at": "2026-03-01T10:00:00Z",
+  "images": [
+    {
+      "id": "img-sleeve-01-1",
+      "url": "/images/5-sleeve/1.jpeg",
+      "alt": "Boxy 5-Sleeve Tee 01 View 1",
+      "sort_order": 1
+    }
+  ],
+  "variants": [
+    {
+      "id": "var-slv-01-s",
+      "size": "S",
+      "color": "Studio Tone",
+      "color_hex": "#1F1F1F",
+      "sku": "SLV-01-S",
+      "stock": 12
+    },
+    {
+      "id": "var-slv-01-m",
+      "size": "M",
+      "color": "Studio Tone",
+      "color_hex": "#1F1F1F",
+      "sku": "SLV-01-M",
+      "stock": 24
+    },
+    {
+      "id": "var-slv-01-l",
+      "size": "L",
+      "color": "Studio Tone",
+      "color_hex": "#1F1F1F",
+      "sku": "SLV-01-L",
+      "stock": 18
+    },
+    {
+      "id": "var-slv-01-xl",
+      "size": "XL",
+      "color": "Studio Tone",
+      "color_hex": "#1F1F1F",
+      "sku": "SLV-01-XL",
+      "stock": 8
+    }
+  ]
+,
+  category: MOCK_CATEGORIES[0],
+},
+{
+  "id": "prod-sleeve-02",
+  "name": "Drop-Shoulder 5-Sleeve Tee 02",
+  "slug": "5-sleeve-tee-02",
+  "description": "Drop-Shoulder 5-Sleeve Tee 02 crafted with high-density combed jersey cotton. Boxy drop-shoulder silhouette cut with everyday relaxed drape.",
+  "fabric": "100% Super Combed 260-280 GSM Cotton. Pre-shrunk & bio-washed.",
+  "care": "Machine wash cold with like colors. Line dry in shade.",
+  "category_id": "cat-5-sleeve",
+  "price": 849,
+  "compare_at_price": 1399,
+  "discount_percent": 39,
+  "tags": [
+    "Drop Shoulder • Off-White",
+    "5-sleeve",
+    "heavyweight",
+    "oversized"
+  ],
+  "is_featured": true,
+  "is_new": false,
+  "is_bestseller": false,
+  "is_active": true,
+  "created_at": "2026-03-02T10:00:00Z",
+  "images": [
+    {
+      "id": "img-sleeve-02-1",
+      "url": "/images/5-sleeve/2.jpeg",
+      "alt": "Drop-Shoulder 5-Sleeve Tee 02 View 1",
+      "sort_order": 1
+    }
+  ],
+  "variants": [
+    {
+      "id": "var-slv-02-s",
+      "size": "S",
+      "color": "Studio Tone",
+      "color_hex": "#1F1F1F",
+      "sku": "SLV-02-S",
+      "stock": 12
+    },
+    {
+      "id": "var-slv-02-m",
+      "size": "M",
+      "color": "Studio Tone",
+      "color_hex": "#1F1F1F",
+      "sku": "SLV-02-M",
+      "stock": 24
+    },
+    {
+      "id": "var-slv-02-l",
+      "size": "L",
+      "color": "Studio Tone",
+      "color_hex": "#1F1F1F",
+      "sku": "SLV-02-L",
+      "stock": 18
+    },
+    {
+      "id": "var-slv-02-xl",
+      "size": "XL",
+      "color": "Studio Tone",
+      "color_hex": "#1F1F1F",
+      "sku": "SLV-02-XL",
+      "stock": 8
+    }
+  ]
+,
+  category: MOCK_CATEGORIES[0],
+},
+{
+  "id": "prod-sleeve-03",
+  "name": "Heavyweight 5-Sleeve Tee 03",
+  "slug": "5-sleeve-tee-03",
+  "description": "Heavyweight 5-Sleeve Tee 03 crafted with high-density combed jersey cotton. Boxy drop-shoulder silhouette cut with everyday relaxed drape.",
+  "fabric": "100% Super Combed 260-280 GSM Cotton. Pre-shrunk & bio-washed.",
+  "care": "Machine wash cold with like colors. Line dry in shade.",
+  "category_id": "cat-5-sleeve",
+  "price": 849,
+  "compare_at_price": 1399,
+  "discount_percent": 39,
+  "tags": [
+    "280 GSM • Carbon",
+    "5-sleeve",
+    "heavyweight",
+    "oversized"
+  ],
+  "is_featured": true,
+  "is_new": false,
+  "is_bestseller": true,
+  "is_active": true,
+  "created_at": "2026-03-03T10:00:00Z",
+  "images": [
+    {
+      "id": "img-sleeve-03-1",
+      "url": "/images/5-sleeve/3(849).jpeg",
+      "alt": "Heavyweight 5-Sleeve Tee 03 View 1",
+      "sort_order": 1
+    }
+  ],
+  "variants": [
+    {
+      "id": "var-slv-03-s",
+      "size": "S",
+      "color": "Studio Tone",
+      "color_hex": "#1F1F1F",
+      "sku": "SLV-03-S",
+      "stock": 12
+    },
+    {
+      "id": "var-slv-03-m",
+      "size": "M",
+      "color": "Studio Tone",
+      "color_hex": "#1F1F1F",
+      "sku": "SLV-03-M",
+      "stock": 24
+    },
+    {
+      "id": "var-slv-03-l",
+      "size": "L",
+      "color": "Studio Tone",
+      "color_hex": "#1F1F1F",
+      "sku": "SLV-03-L",
+      "stock": 18
+    },
+    {
+      "id": "var-slv-03-xl",
+      "size": "XL",
+      "color": "Studio Tone",
+      "color_hex": "#1F1F1F",
+      "sku": "SLV-03-XL",
+      "stock": 8
+    }
+  ]
+,
+  category: MOCK_CATEGORIES[0],
+},
+{
+  "id": "prod-sleeve-04",
+  "name": "Acid Stonewash 5-Sleeve Tee 04",
+  "slug": "5-sleeve-tee-04",
+  "description": "Acid Stonewash 5-Sleeve Tee 04 crafted with high-density combed jersey cotton. Boxy drop-shoulder silhouette cut with everyday relaxed drape.",
+  "fabric": "100% Super Combed 260-280 GSM Cotton. Pre-shrunk & bio-washed.",
+  "care": "Machine wash cold with like colors. Line dry in shade.",
+  "category_id": "cat-5-sleeve",
+  "price": 849,
+  "compare_at_price": 1399,
+  "discount_percent": 39,
+  "tags": [
+    "Acid Wash • Grey",
+    "5-sleeve",
+    "heavyweight",
+    "oversized"
+  ],
+  "is_featured": true,
+  "is_new": true,
+  "is_bestseller": false,
+  "is_active": true,
+  "created_at": "2026-03-04T10:00:00Z",
+  "images": [
+    {
+      "id": "img-sleeve-04-1",
+      "url": "/images/5-sleeve/4-849.jpeg",
+      "alt": "Acid Stonewash 5-Sleeve Tee 04 View 1",
+      "sort_order": 1
+    }
+  ],
+  "variants": [
+    {
+      "id": "var-slv-04-s",
+      "size": "S",
+      "color": "Studio Tone",
+      "color_hex": "#1F1F1F",
+      "sku": "SLV-04-S",
+      "stock": 12
+    },
+    {
+      "id": "var-slv-04-m",
+      "size": "M",
+      "color": "Studio Tone",
+      "color_hex": "#1F1F1F",
+      "sku": "SLV-04-M",
+      "stock": 24
+    },
+    {
+      "id": "var-slv-04-l",
+      "size": "L",
+      "color": "Studio Tone",
+      "color_hex": "#1F1F1F",
+      "sku": "SLV-04-L",
+      "stock": 18
+    },
+    {
+      "id": "var-slv-04-xl",
+      "size": "XL",
+      "color": "Studio Tone",
+      "color_hex": "#1F1F1F",
+      "sku": "SLV-04-XL",
+      "stock": 8
+    }
+  ]
+,
+  category: MOCK_CATEGORIES[0],
+},
+{
+  "id": "prod-sleeve-05",
+  "name": "Minimalist Core 5-Sleeve Tee 05",
+  "slug": "5-sleeve-tee-05",
+  "description": "Minimalist Core 5-Sleeve Tee 05 crafted with high-density combed jersey cotton. Boxy drop-shoulder silhouette cut with everyday relaxed drape.",
+  "fabric": "100% Super Combed 260-280 GSM Cotton. Pre-shrunk & bio-washed.",
+  "care": "Machine wash cold with like colors. Line dry in shade.",
+  "category_id": "cat-5-sleeve",
+  "price": 799,
+  "compare_at_price": 1399,
+  "discount_percent": 43,
+  "tags": [
+    "Essential • Chalk",
+    "5-sleeve",
+    "heavyweight",
+    "oversized"
+  ],
+  "is_featured": false,
+  "is_new": false,
+  "is_bestseller": true,
+  "is_active": true,
+  "created_at": "2026-03-05T10:00:00Z",
+  "images": [
+    {
+      "id": "img-sleeve-05-1",
+      "url": "/images/5-sleeve/5-799.jpeg",
+      "alt": "Minimalist Core 5-Sleeve Tee 05 View 1",
+      "sort_order": 1
+    }
+  ],
+  "variants": [
+    {
+      "id": "var-slv-05-s",
+      "size": "S",
+      "color": "Studio Tone",
+      "color_hex": "#1F1F1F",
+      "sku": "SLV-05-S",
+      "stock": 12
+    },
+    {
+      "id": "var-slv-05-m",
+      "size": "M",
+      "color": "Studio Tone",
+      "color_hex": "#1F1F1F",
+      "sku": "SLV-05-M",
+      "stock": 24
+    },
+    {
+      "id": "var-slv-05-l",
+      "size": "L",
+      "color": "Studio Tone",
+      "color_hex": "#1F1F1F",
+      "sku": "SLV-05-L",
+      "stock": 18
+    },
+    {
+      "id": "var-slv-05-xl",
+      "size": "XL",
+      "color": "Studio Tone",
+      "color_hex": "#1F1F1F",
+      "sku": "SLV-05-XL",
+      "stock": 8
+    }
+  ]
+,
+  category: MOCK_CATEGORIES[0],
+},
+{
+  "id": "prod-sleeve-06",
+  "name": "Streetwear Heavyweight Tee 06",
+  "slug": "5-sleeve-tee-06",
+  "description": "Streetwear Heavyweight Tee 06 crafted with high-density combed jersey cotton. Boxy drop-shoulder silhouette cut with everyday relaxed drape.",
+  "fabric": "100% Super Combed 260-280 GSM Cotton. Pre-shrunk & bio-washed.",
+  "care": "Machine wash cold with like colors. Line dry in shade.",
+  "category_id": "cat-5-sleeve",
+  "price": 849,
+  "compare_at_price": 1399,
+  "discount_percent": 39,
+  "tags": [
+    "Street Cut • Olive",
+    "5-sleeve",
+    "heavyweight",
+    "oversized"
+  ],
+  "is_featured": false,
+  "is_new": false,
+  "is_bestseller": false,
+  "is_active": true,
+  "created_at": "2026-03-06T10:00:00Z",
+  "images": [
+    {
+      "id": "img-sleeve-06-1",
+      "url": "/images/5-sleeve/6-849.jpeg",
+      "alt": "Streetwear Heavyweight Tee 06 View 1",
+      "sort_order": 1
+    }
+  ],
+  "variants": [
+    {
+      "id": "var-slv-06-s",
+      "size": "S",
+      "color": "Studio Tone",
+      "color_hex": "#1F1F1F",
+      "sku": "SLV-06-S",
+      "stock": 12
+    },
+    {
+      "id": "var-slv-06-m",
+      "size": "M",
+      "color": "Studio Tone",
+      "color_hex": "#1F1F1F",
+      "sku": "SLV-06-M",
+      "stock": 24
+    },
+    {
+      "id": "var-slv-06-l",
+      "size": "L",
+      "color": "Studio Tone",
+      "color_hex": "#1F1F1F",
+      "sku": "SLV-06-L",
+      "stock": 18
+    },
+    {
+      "id": "var-slv-06-xl",
+      "size": "XL",
+      "color": "Studio Tone",
+      "color_hex": "#1F1F1F",
+      "sku": "SLV-06-XL",
+      "stock": 8
+    }
+  ]
+,
+  category: MOCK_CATEGORIES[0],
+},
+{
+  "id": "prod-sleeve-07",
+  "name": "Raw Seam Studio 5-Sleeve Tee 07",
+  "slug": "5-sleeve-tee-07",
+  "description": "Raw Seam Studio 5-Sleeve Tee 07 crafted with high-density combed jersey cotton. Boxy drop-shoulder silhouette cut with everyday relaxed drape.",
+  "fabric": "100% Super Combed 260-280 GSM Cotton. Pre-shrunk & bio-washed.",
+  "care": "Machine wash cold with like colors. Line dry in shade.",
+  "category_id": "cat-5-sleeve",
+  "price": 849,
+  "compare_at_price": 1399,
+  "discount_percent": 39,
+  "tags": [
+    "Raw Edge • Taupe",
+    "5-sleeve",
+    "heavyweight",
+    "oversized"
+  ],
+  "is_featured": false,
+  "is_new": true,
+  "is_bestseller": true,
+  "is_active": true,
+  "created_at": "2026-03-07T10:00:00Z",
+  "images": [
+    {
+      "id": "img-sleeve-07-1",
+      "url": "/images/5-sleeve/7-849.jpeg",
+      "alt": "Raw Seam Studio 5-Sleeve Tee 07 View 1",
+      "sort_order": 1
+    }
+  ],
+  "variants": [
+    {
+      "id": "var-slv-07-s",
+      "size": "S",
+      "color": "Studio Tone",
+      "color_hex": "#1F1F1F",
+      "sku": "SLV-07-S",
+      "stock": 12
+    },
+    {
+      "id": "var-slv-07-m",
+      "size": "M",
+      "color": "Studio Tone",
+      "color_hex": "#1F1F1F",
+      "sku": "SLV-07-M",
+      "stock": 24
+    },
+    {
+      "id": "var-slv-07-l",
+      "size": "L",
+      "color": "Studio Tone",
+      "color_hex": "#1F1F1F",
+      "sku": "SLV-07-L",
+      "stock": 18
+    },
+    {
+      "id": "var-slv-07-xl",
+      "size": "XL",
+      "color": "Studio Tone",
+      "color_hex": "#1F1F1F",
+      "sku": "SLV-07-XL",
+      "stock": 8
+    }
+  ]
+,
+  category: MOCK_CATEGORIES[0],
+},
+{
+  "id": "prod-sleeve-08",
+  "name": "Washed Carbon 5-Sleeve Tee 08",
+  "slug": "5-sleeve-tee-08",
+  "description": "Washed Carbon 5-Sleeve Tee 08 crafted with high-density combed jersey cotton. Boxy drop-shoulder silhouette cut with everyday relaxed drape.",
+  "fabric": "100% Super Combed 260-280 GSM Cotton. Pre-shrunk & bio-washed.",
+  "care": "Machine wash cold with like colors. Line dry in shade.",
+  "category_id": "cat-5-sleeve",
+  "price": 849,
+  "compare_at_price": 1399,
+  "discount_percent": 39,
+  "tags": [
+    "Washed • Charcoal",
+    "5-sleeve",
+    "heavyweight",
+    "oversized"
+  ],
+  "is_featured": false,
+  "is_new": false,
+  "is_bestseller": false,
+  "is_active": true,
+  "created_at": "2026-03-08T10:00:00Z",
+  "images": [
+    {
+      "id": "img-sleeve-08-1",
+      "url": "/images/5-sleeve/8-849.jpeg",
+      "alt": "Washed Carbon 5-Sleeve Tee 08 View 1",
+      "sort_order": 1
+    }
+  ],
+  "variants": [
+    {
+      "id": "var-slv-08-s",
+      "size": "S",
+      "color": "Studio Tone",
+      "color_hex": "#1F1F1F",
+      "sku": "SLV-08-S",
+      "stock": 12
+    },
+    {
+      "id": "var-slv-08-m",
+      "size": "M",
+      "color": "Studio Tone",
+      "color_hex": "#1F1F1F",
+      "sku": "SLV-08-M",
+      "stock": 24
+    },
+    {
+      "id": "var-slv-08-l",
+      "size": "L",
+      "color": "Studio Tone",
+      "color_hex": "#1F1F1F",
+      "sku": "SLV-08-L",
+      "stock": 18
+    },
+    {
+      "id": "var-slv-08-xl",
+      "size": "XL",
+      "color": "Studio Tone",
+      "color_hex": "#1F1F1F",
+      "sku": "SLV-08-XL",
+      "stock": 8
+    }
+  ]
+,
+  category: MOCK_CATEGORIES[0],
+},
+{
+  "id": "prod-sleeve-09",
+  "name": "Archive Graphic 5-Sleeve Tee 09",
+  "slug": "5-sleeve-tee-09",
+  "description": "Archive Graphic 5-Sleeve Tee 09 crafted with high-density combed jersey cotton. Boxy drop-shoulder silhouette cut with everyday relaxed drape.",
+  "fabric": "100% Super Combed 260-280 GSM Cotton. Pre-shrunk & bio-washed.",
+  "care": "Machine wash cold with like colors. Line dry in shade.",
+  "category_id": "cat-5-sleeve",
+  "price": 949,
+  "compare_at_price": 1599,
+  "discount_percent": 41,
+  "tags": [
+    "Graphic • Vintage",
+    "5-sleeve",
+    "heavyweight",
+    "oversized"
+  ],
+  "is_featured": false,
+  "is_new": false,
+  "is_bestseller": true,
+  "is_active": true,
+  "created_at": "2026-03-01T10:00:00Z",
+  "images": [
+    {
+      "id": "img-sleeve-09-1",
+      "url": "/images/5-sleeve/9-949.jpeg",
+      "alt": "Archive Graphic 5-Sleeve Tee 09 View 1",
+      "sort_order": 1
+    }
+  ],
+  "variants": [
+    {
+      "id": "var-slv-09-s",
+      "size": "S",
+      "color": "Studio Tone",
+      "color_hex": "#1F1F1F",
+      "sku": "SLV-09-S",
+      "stock": 12
+    },
+    {
+      "id": "var-slv-09-m",
+      "size": "M",
+      "color": "Studio Tone",
+      "color_hex": "#1F1F1F",
+      "sku": "SLV-09-M",
+      "stock": 24
+    },
+    {
+      "id": "var-slv-09-l",
+      "size": "L",
+      "color": "Studio Tone",
+      "color_hex": "#1F1F1F",
+      "sku": "SLV-09-L",
+      "stock": 18
+    },
+    {
+      "id": "var-slv-09-xl",
+      "size": "XL",
+      "color": "Studio Tone",
+      "color_hex": "#1F1F1F",
+      "sku": "SLV-09-XL",
+      "stock": 8
+    }
+  ]
+,
+  category: MOCK_CATEGORIES[0],
+},
+{
+  "id": "prod-sleeve-10",
+  "name": "Vintage Drape 5-Sleeve Tee 10",
+  "slug": "5-sleeve-tee-10",
+  "description": "Vintage Drape 5-Sleeve Tee 10 crafted with high-density combed jersey cotton. Boxy drop-shoulder silhouette cut with everyday relaxed drape.",
+  "fabric": "100% Super Combed 260-280 GSM Cotton. Pre-shrunk & bio-washed.",
+  "care": "Machine wash cold with like colors. Line dry in shade.",
+  "category_id": "cat-5-sleeve",
+  "price": 949,
+  "compare_at_price": 1599,
+  "discount_percent": 41,
+  "tags": [
+    "Drape Cut • Cream",
+    "5-sleeve",
+    "heavyweight",
+    "oversized"
+  ],
+  "is_featured": false,
+  "is_new": true,
+  "is_bestseller": false,
+  "is_active": true,
+  "created_at": "2026-03-02T10:00:00Z",
+  "images": [
+    {
+      "id": "img-sleeve-10-1",
+      "url": "/images/5-sleeve/10-949.jpeg",
+      "alt": "Vintage Drape 5-Sleeve Tee 10 View 1",
+      "sort_order": 1
+    }
+  ],
+  "variants": [
+    {
+      "id": "var-slv-10-s",
+      "size": "S",
+      "color": "Studio Tone",
+      "color_hex": "#1F1F1F",
+      "sku": "SLV-10-S",
+      "stock": 12
+    },
+    {
+      "id": "var-slv-10-m",
+      "size": "M",
+      "color": "Studio Tone",
+      "color_hex": "#1F1F1F",
+      "sku": "SLV-10-M",
+      "stock": 24
+    },
+    {
+      "id": "var-slv-10-l",
+      "size": "L",
+      "color": "Studio Tone",
+      "color_hex": "#1F1F1F",
+      "sku": "SLV-10-L",
+      "stock": 18
+    },
+    {
+      "id": "var-slv-10-xl",
+      "size": "XL",
+      "color": "Studio Tone",
+      "color_hex": "#1F1F1F",
+      "sku": "SLV-10-XL",
+      "stock": 8
+    }
+  ]
+,
+  category: MOCK_CATEGORIES[0],
+},
+{
+  "id": "prod-sleeve-11",
+  "name": "Heavy French Terry Tee 11",
+  "slug": "5-sleeve-tee-11",
+  "description": "Heavy French Terry Tee 11 crafted with high-density combed jersey cotton. Boxy drop-shoulder silhouette cut with everyday relaxed drape.",
+  "fabric": "100% Super Combed 260-280 GSM Cotton. Pre-shrunk & bio-washed.",
+  "care": "Machine wash cold with like colors. Line dry in shade.",
+  "category_id": "cat-5-sleeve",
+  "price": 949,
+  "compare_at_price": 1599,
+  "discount_percent": 41,
+  "tags": [
+    "French Terry • Black",
+    "5-sleeve",
+    "heavyweight",
+    "oversized"
+  ],
+  "is_featured": false,
+  "is_new": false,
+  "is_bestseller": true,
+  "is_active": true,
+  "created_at": "2026-03-03T10:00:00Z",
+  "images": [
+    {
+      "id": "img-sleeve-11-1",
+      "url": "/images/5-sleeve/11-949.jpeg",
+      "alt": "Heavy French Terry Tee 11 View 1",
+      "sort_order": 1
+    }
+  ],
+  "variants": [
+    {
+      "id": "var-slv-11-s",
+      "size": "S",
+      "color": "Studio Tone",
+      "color_hex": "#1F1F1F",
+      "sku": "SLV-11-S",
+      "stock": 12
+    },
+    {
+      "id": "var-slv-11-m",
+      "size": "M",
+      "color": "Studio Tone",
+      "color_hex": "#1F1F1F",
+      "sku": "SLV-11-M",
+      "stock": 24
+    },
+    {
+      "id": "var-slv-11-l",
+      "size": "L",
+      "color": "Studio Tone",
+      "color_hex": "#1F1F1F",
+      "sku": "SLV-11-L",
+      "stock": 18
+    },
+    {
+      "id": "var-slv-11-xl",
+      "size": "XL",
+      "color": "Studio Tone",
+      "color_hex": "#1F1F1F",
+      "sku": "SLV-11-XL",
+      "stock": 8
+    }
+  ]
+,
+  category: MOCK_CATEGORIES[0],
+},
+{
+  "id": "prod-sleeve-12",
+  "name": "Relaxed Studio 5-Sleeve Tee 12",
+  "slug": "5-sleeve-tee-12",
+  "description": "Relaxed Studio 5-Sleeve Tee 12 crafted with high-density combed jersey cotton. Boxy drop-shoulder silhouette cut with everyday relaxed drape.",
+  "fabric": "100% Super Combed 260-280 GSM Cotton. Pre-shrunk & bio-washed.",
+  "care": "Machine wash cold with like colors. Line dry in shade.",
+  "category_id": "cat-5-sleeve",
+  "price": 899,
+  "compare_at_price": 1499,
+  "discount_percent": 40,
+  "tags": [
+    "Studio Fit • Mocha",
+    "5-sleeve",
+    "heavyweight",
+    "oversized"
+  ],
+  "is_featured": false,
+  "is_new": false,
+  "is_bestseller": false,
+  "is_active": true,
+  "created_at": "2026-03-04T10:00:00Z",
+  "images": [
+    {
+      "id": "img-sleeve-12-1",
+      "url": "/images/5-sleeve/12-899.jpeg",
+      "alt": "Relaxed Studio 5-Sleeve Tee 12 View 1",
+      "sort_order": 1
+    }
+  ],
+  "variants": [
+    {
+      "id": "var-slv-12-s",
+      "size": "S",
+      "color": "Studio Tone",
+      "color_hex": "#1F1F1F",
+      "sku": "SLV-12-S",
+      "stock": 12
+    },
+    {
+      "id": "var-slv-12-m",
+      "size": "M",
+      "color": "Studio Tone",
+      "color_hex": "#1F1F1F",
+      "sku": "SLV-12-M",
+      "stock": 24
+    },
+    {
+      "id": "var-slv-12-l",
+      "size": "L",
+      "color": "Studio Tone",
+      "color_hex": "#1F1F1F",
+      "sku": "SLV-12-L",
+      "stock": 18
+    },
+    {
+      "id": "var-slv-12-xl",
+      "size": "XL",
+      "color": "Studio Tone",
+      "color_hex": "#1F1F1F",
+      "sku": "SLV-12-XL",
+      "stock": 8
+    }
+  ]
+,
+  category: MOCK_CATEGORIES[0],
+},
+{
+  "id": "prod-sleeve-13",
+  "name": "Chalk White 5-Sleeve Tee 13",
+  "slug": "5-sleeve-tee-13",
+  "description": "Chalk White 5-Sleeve Tee 13 crafted with high-density combed jersey cotton. Boxy drop-shoulder silhouette cut with everyday relaxed drape.",
+  "fabric": "100% Super Combed 260-280 GSM Cotton. Pre-shrunk & bio-washed.",
+  "care": "Machine wash cold with like colors. Line dry in shade.",
+  "category_id": "cat-5-sleeve",
+  "price": 899,
+  "compare_at_price": 1499,
+  "discount_percent": 40,
+  "tags": [
+    "Pure Chalk • White",
+    "5-sleeve",
+    "heavyweight",
+    "oversized"
+  ],
+  "is_featured": false,
+  "is_new": true,
+  "is_bestseller": true,
+  "is_active": true,
+  "created_at": "2026-03-05T10:00:00Z",
+  "images": [
+    {
+      "id": "img-sleeve-13-1",
+      "url": "/images/5-sleeve/13-899.jpeg",
+      "alt": "Chalk White 5-Sleeve Tee 13 View 1",
+      "sort_order": 1
+    }
+  ],
+  "variants": [
+    {
+      "id": "var-slv-13-s",
+      "size": "S",
+      "color": "Studio Tone",
+      "color_hex": "#1F1F1F",
+      "sku": "SLV-13-S",
+      "stock": 12
+    },
+    {
+      "id": "var-slv-13-m",
+      "size": "M",
+      "color": "Studio Tone",
+      "color_hex": "#1F1F1F",
+      "sku": "SLV-13-M",
+      "stock": 24
+    },
+    {
+      "id": "var-slv-13-l",
+      "size": "L",
+      "color": "Studio Tone",
+      "color_hex": "#1F1F1F",
+      "sku": "SLV-13-L",
+      "stock": 18
+    },
+    {
+      "id": "var-slv-13-xl",
+      "size": "XL",
+      "color": "Studio Tone",
+      "color_hex": "#1F1F1F",
+      "sku": "SLV-13-XL",
+      "stock": 8
+    }
+  ]
+,
+  category: MOCK_CATEGORIES[0],
+},
+{
+  "id": "prod-sleeve-14",
+  "name": "Pitch Black 5-Sleeve Tee 14",
+  "slug": "5-sleeve-tee-14",
+  "description": "Pitch Black 5-Sleeve Tee 14 crafted with high-density combed jersey cotton. Boxy drop-shoulder silhouette cut with everyday relaxed drape.",
+  "fabric": "100% Super Combed 260-280 GSM Cotton. Pre-shrunk & bio-washed.",
+  "care": "Machine wash cold with like colors. Line dry in shade.",
+  "category_id": "cat-5-sleeve",
+  "price": 899,
+  "compare_at_price": 1499,
+  "discount_percent": 40,
+  "tags": [
+    "Pitch Black • Onyx",
+    "5-sleeve",
+    "heavyweight",
+    "oversized"
+  ],
+  "is_featured": false,
+  "is_new": false,
+  "is_bestseller": false,
+  "is_active": true,
+  "created_at": "2026-03-06T10:00:00Z",
+  "images": [
+    {
+      "id": "img-sleeve-14-1",
+      "url": "/images/5-sleeve/14-899.jpeg",
+      "alt": "Pitch Black 5-Sleeve Tee 14 View 1",
+      "sort_order": 1
+    }
+  ],
+  "variants": [
+    {
+      "id": "var-slv-14-s",
+      "size": "S",
+      "color": "Studio Tone",
+      "color_hex": "#1F1F1F",
+      "sku": "SLV-14-S",
+      "stock": 12
+    },
+    {
+      "id": "var-slv-14-m",
+      "size": "M",
+      "color": "Studio Tone",
+      "color_hex": "#1F1F1F",
+      "sku": "SLV-14-M",
+      "stock": 24
+    },
+    {
+      "id": "var-slv-14-l",
+      "size": "L",
+      "color": "Studio Tone",
+      "color_hex": "#1F1F1F",
+      "sku": "SLV-14-L",
+      "stock": 18
+    },
+    {
+      "id": "var-slv-14-xl",
+      "size": "XL",
+      "color": "Studio Tone",
+      "color_hex": "#1F1F1F",
+      "sku": "SLV-14-XL",
+      "stock": 8
+    }
+  ]
+,
+  category: MOCK_CATEGORIES[0],
+},
+{
+  "id": "prod-sleeve-15",
+  "name": "Ash Grey 5-Sleeve Tee 15",
+  "slug": "5-sleeve-tee-15",
+  "description": "Ash Grey 5-Sleeve Tee 15 crafted with high-density combed jersey cotton. Boxy drop-shoulder silhouette cut with everyday relaxed drape.",
+  "fabric": "100% Super Combed 260-280 GSM Cotton. Pre-shrunk & bio-washed.",
+  "care": "Machine wash cold with like colors. Line dry in shade.",
+  "category_id": "cat-5-sleeve",
+  "price": 899,
+  "compare_at_price": 1499,
+  "discount_percent": 40,
+  "tags": [
+    "Ash Tone • Heather",
+    "5-sleeve",
+    "heavyweight",
+    "oversized"
+  ],
+  "is_featured": false,
+  "is_new": false,
+  "is_bestseller": true,
+  "is_active": true,
+  "created_at": "2026-03-07T10:00:00Z",
+  "images": [
+    {
+      "id": "img-sleeve-15-1",
+      "url": "/images/5-sleeve/15-8999.jpeg",
+      "alt": "Ash Grey 5-Sleeve Tee 15 View 1",
+      "sort_order": 1
+    }
+  ],
+  "variants": [
+    {
+      "id": "var-slv-15-s",
+      "size": "S",
+      "color": "Studio Tone",
+      "color_hex": "#1F1F1F",
+      "sku": "SLV-15-S",
+      "stock": 12
+    },
+    {
+      "id": "var-slv-15-m",
+      "size": "M",
+      "color": "Studio Tone",
+      "color_hex": "#1F1F1F",
+      "sku": "SLV-15-M",
+      "stock": 24
+    },
+    {
+      "id": "var-slv-15-l",
+      "size": "L",
+      "color": "Studio Tone",
+      "color_hex": "#1F1F1F",
+      "sku": "SLV-15-L",
+      "stock": 18
+    },
+    {
+      "id": "var-slv-15-xl",
+      "size": "XL",
+      "color": "Studio Tone",
+      "color_hex": "#1F1F1F",
+      "sku": "SLV-15-XL",
+      "stock": 8
+    }
+  ]
+,
+  category: MOCK_CATEGORIES[0],
+},
+{
+  "id": "prod-sleeve-16",
+  "name": "Crimson Red 5-Sleeve Tee 16",
+  "slug": "5-sleeve-tee-16",
+  "description": "Crimson Red 5-Sleeve Tee 16 crafted with high-density combed jersey cotton. Boxy drop-shoulder silhouette cut with everyday relaxed drape.",
+  "fabric": "100% Super Combed 260-280 GSM Cotton. Pre-shrunk & bio-washed.",
+  "care": "Machine wash cold with like colors. Line dry in shade.",
+  "category_id": "cat-5-sleeve",
+  "price": 899,
+  "compare_at_price": 1499,
+  "discount_percent": 40,
+  "tags": [
+    "Crimson • Red",
+    "5-sleeve",
+    "heavyweight",
+    "oversized"
+  ],
+  "is_featured": false,
+  "is_new": true,
+  "is_bestseller": false,
+  "is_active": true,
+  "created_at": "2026-03-08T10:00:00Z",
+  "images": [
+    {
+      "id": "img-sleeve-16-1",
+      "url": "/images/5-sleeve/16-899.jpeg",
+      "alt": "Crimson Red 5-Sleeve Tee 16 View 1",
+      "sort_order": 1
+    }
+  ],
+  "variants": [
+    {
+      "id": "var-slv-16-s",
+      "size": "S",
+      "color": "Studio Tone",
+      "color_hex": "#1F1F1F",
+      "sku": "SLV-16-S",
+      "stock": 12
+    },
+    {
+      "id": "var-slv-16-m",
+      "size": "M",
+      "color": "Studio Tone",
+      "color_hex": "#1F1F1F",
+      "sku": "SLV-16-M",
+      "stock": 24
+    },
+    {
+      "id": "var-slv-16-l",
+      "size": "L",
+      "color": "Studio Tone",
+      "color_hex": "#1F1F1F",
+      "sku": "SLV-16-L",
+      "stock": 18
+    },
+    {
+      "id": "var-slv-16-xl",
+      "size": "XL",
+      "color": "Studio Tone",
+      "color_hex": "#1F1F1F",
+      "sku": "SLV-16-XL",
+      "stock": 8
+    }
+  ]
+,
+  category: MOCK_CATEGORIES[0],
+},
+{
+  "id": "prod-sleeve-17",
+  "name": "Mocha Brown 5-Sleeve Tee 17",
+  "slug": "5-sleeve-tee-17",
+  "description": "Mocha Brown 5-Sleeve Tee 17 crafted with high-density combed jersey cotton. Boxy drop-shoulder silhouette cut with everyday relaxed drape.",
+  "fabric": "100% Super Combed 260-280 GSM Cotton. Pre-shrunk & bio-washed.",
+  "care": "Machine wash cold with like colors. Line dry in shade.",
+  "category_id": "cat-5-sleeve",
+  "price": 899,
+  "compare_at_price": 1499,
+  "discount_percent": 40,
+  "tags": [
+    "Earth Tone • Brown",
+    "5-sleeve",
+    "heavyweight",
+    "oversized"
+  ],
+  "is_featured": false,
+  "is_new": false,
+  "is_bestseller": true,
+  "is_active": true,
+  "created_at": "2026-03-01T10:00:00Z",
+  "images": [
+    {
+      "id": "img-sleeve-17-1",
+      "url": "/images/5-sleeve/17-899.jpeg",
+      "alt": "Mocha Brown 5-Sleeve Tee 17 View 1",
+      "sort_order": 1
+    }
+  ],
+  "variants": [
+    {
+      "id": "var-slv-17-s",
+      "size": "S",
+      "color": "Studio Tone",
+      "color_hex": "#1F1F1F",
+      "sku": "SLV-17-S",
+      "stock": 12
+    },
+    {
+      "id": "var-slv-17-m",
+      "size": "M",
+      "color": "Studio Tone",
+      "color_hex": "#1F1F1F",
+      "sku": "SLV-17-M",
+      "stock": 24
+    },
+    {
+      "id": "var-slv-17-l",
+      "size": "L",
+      "color": "Studio Tone",
+      "color_hex": "#1F1F1F",
+      "sku": "SLV-17-L",
+      "stock": 18
+    },
+    {
+      "id": "var-slv-17-xl",
+      "size": "XL",
+      "color": "Studio Tone",
+      "color_hex": "#1F1F1F",
+      "sku": "SLV-17-XL",
+      "stock": 8
+    }
+  ]
+,
+  category: MOCK_CATEGORIES[0],
+},
+{
+  "id": "prod-sleeve-18",
+  "name": "Dual Tone 5-Sleeve Tee 18",
+  "slug": "5-sleeve-tee-18",
+  "description": "Dual Tone 5-Sleeve Tee 18 crafted with high-density combed jersey cotton. Boxy drop-shoulder silhouette cut with everyday relaxed drape.",
+  "fabric": "100% Super Combed 260-280 GSM Cotton. Pre-shrunk & bio-washed.",
+  "care": "Machine wash cold with like colors. Line dry in shade.",
+  "category_id": "cat-5-sleeve",
+  "price": 899,
+  "compare_at_price": 1499,
+  "discount_percent": 40,
+  "tags": [
+    "Dual Tone • Sand",
+    "5-sleeve",
+    "heavyweight",
+    "oversized"
+  ],
+  "is_featured": false,
+  "is_new": false,
+  "is_bestseller": false,
+  "is_active": true,
+  "created_at": "2026-03-02T10:00:00Z",
+  "images": [
+    {
+      "id": "img-sleeve-18-1",
+      "url": "/images/5-sleeve/18.1-899.jpeg",
+      "alt": "Dual Tone 5-Sleeve Tee 18 View 1",
+      "sort_order": 1
+    },
+    {
+      "id": "img-sleeve-18-2",
+      "url": "/images/5-sleeve/18.2-899.jpeg",
+      "alt": "Dual Tone 5-Sleeve Tee 18 View 2",
+      "sort_order": 2
+    }
+  ],
+  "variants": [
+    {
+      "id": "var-slv-18-s",
+      "size": "S",
+      "color": "Studio Tone",
+      "color_hex": "#1F1F1F",
+      "sku": "SLV-18-S",
+      "stock": 12
+    },
+    {
+      "id": "var-slv-18-m",
+      "size": "M",
+      "color": "Studio Tone",
+      "color_hex": "#1F1F1F",
+      "sku": "SLV-18-M",
+      "stock": 24
+    },
+    {
+      "id": "var-slv-18-l",
+      "size": "L",
+      "color": "Studio Tone",
+      "color_hex": "#1F1F1F",
+      "sku": "SLV-18-L",
+      "stock": 18
+    },
+    {
+      "id": "var-slv-18-xl",
+      "size": "XL",
+      "color": "Studio Tone",
+      "color_hex": "#1F1F1F",
+      "sku": "SLV-18-XL",
+      "stock": 8
+    }
+  ]
+,
+  category: MOCK_CATEGORIES[0],
+},
+{
+  "id": "prod-sleeve-19",
+  "name": "Essential Washed Tee 19",
+  "slug": "5-sleeve-tee-19",
+  "description": "Essential Washed Tee 19 crafted with high-density combed jersey cotton. Boxy drop-shoulder silhouette cut with everyday relaxed drape.",
+  "fabric": "100% Super Combed 260-280 GSM Cotton. Pre-shrunk & bio-washed.",
+  "care": "Machine wash cold with like colors. Line dry in shade.",
+  "category_id": "cat-5-sleeve",
+  "price": 899,
+  "compare_at_price": 1499,
+  "discount_percent": 40,
+  "tags": [
+    "Essential • Slate",
+    "5-sleeve",
+    "heavyweight",
+    "oversized"
+  ],
+  "is_featured": false,
+  "is_new": true,
+  "is_bestseller": true,
+  "is_active": true,
+  "created_at": "2026-03-03T10:00:00Z",
+  "images": [
+    {
+      "id": "img-sleeve-19-1",
+      "url": "/images/5-sleeve/19.1-899.jpeg",
+      "alt": "Essential Washed Tee 19 View 1",
+      "sort_order": 1
+    },
+    {
+      "id": "img-sleeve-19-2",
+      "url": "/images/5-sleeve/19.2.jpeg",
+      "alt": "Essential Washed Tee 19 View 2",
+      "sort_order": 2
+    }
+  ],
+  "variants": [
+    {
+      "id": "var-slv-19-s",
+      "size": "S",
+      "color": "Studio Tone",
+      "color_hex": "#1F1F1F",
+      "sku": "SLV-19-S",
+      "stock": 12
+    },
+    {
+      "id": "var-slv-19-m",
+      "size": "M",
+      "color": "Studio Tone",
+      "color_hex": "#1F1F1F",
+      "sku": "SLV-19-M",
+      "stock": 24
+    },
+    {
+      "id": "var-slv-19-l",
+      "size": "L",
+      "color": "Studio Tone",
+      "color_hex": "#1F1F1F",
+      "sku": "SLV-19-L",
+      "stock": 18
+    },
+    {
+      "id": "var-slv-19-xl",
+      "size": "XL",
+      "color": "Studio Tone",
+      "color_hex": "#1F1F1F",
+      "sku": "SLV-19-XL",
+      "stock": 8
+    }
+  ]
+,
+  category: MOCK_CATEGORIES[0],
+},
+{
+  "id": "prod-sleeve-20",
+  "name": "Architectural Drape Tee 20",
+  "slug": "5-sleeve-tee-20",
+  "description": "Architectural Drape Tee 20 crafted with high-density combed jersey cotton. Boxy drop-shoulder silhouette cut with everyday relaxed drape.",
+  "fabric": "100% Super Combed 260-280 GSM Cotton. Pre-shrunk & bio-washed.",
+  "care": "Machine wash cold with like colors. Line dry in shade.",
+  "category_id": "cat-5-sleeve",
+  "price": 899,
+  "compare_at_price": 1499,
+  "discount_percent": 40,
+  "tags": [
+    "Architectural • Bone",
+    "5-sleeve",
+    "heavyweight",
+    "oversized"
+  ],
+  "is_featured": false,
+  "is_new": false,
+  "is_bestseller": false,
+  "is_active": true,
+  "created_at": "2026-03-04T10:00:00Z",
+  "images": [
+    {
+      "id": "img-sleeve-20-1",
+      "url": "/images/5-sleeve/20.1-899.jpeg",
+      "alt": "Architectural Drape Tee 20 View 1",
+      "sort_order": 1
+    },
+    {
+      "id": "img-sleeve-20-2",
+      "url": "/images/5-sleeve/20.2.jpeg",
+      "alt": "Architectural Drape Tee 20 View 2",
+      "sort_order": 2
+    }
+  ],
+  "variants": [
+    {
+      "id": "var-slv-20-s",
+      "size": "S",
+      "color": "Studio Tone",
+      "color_hex": "#1F1F1F",
+      "sku": "SLV-20-S",
+      "stock": 12
+    },
+    {
+      "id": "var-slv-20-m",
+      "size": "M",
+      "color": "Studio Tone",
+      "color_hex": "#1F1F1F",
+      "sku": "SLV-20-M",
+      "stock": 24
+    },
+    {
+      "id": "var-slv-20-l",
+      "size": "L",
+      "color": "Studio Tone",
+      "color_hex": "#1F1F1F",
+      "sku": "SLV-20-L",
+      "stock": 18
+    },
+    {
+      "id": "var-slv-20-xl",
+      "size": "XL",
+      "color": "Studio Tone",
+      "color_hex": "#1F1F1F",
+      "sku": "SLV-20-XL",
+      "stock": 8
+    }
+  ]
+,
+  category: MOCK_CATEGORIES[0],
+},
+{
+  "id": "prod-sleeve-21",
+  "name": "Cyber Core 5-Sleeve Tee 21",
+  "slug": "5-sleeve-tee-21",
+  "description": "Cyber Core 5-Sleeve Tee 21 crafted with high-density combed jersey cotton. Boxy drop-shoulder silhouette cut with everyday relaxed drape.",
+  "fabric": "100% Super Combed 260-280 GSM Cotton. Pre-shrunk & bio-washed.",
+  "care": "Machine wash cold with like colors. Line dry in shade.",
+  "category_id": "cat-5-sleeve",
+  "price": 899,
+  "compare_at_price": 1499,
+  "discount_percent": 40,
+  "tags": [
+    "Cyber Core • Carbon",
+    "5-sleeve",
+    "heavyweight",
+    "oversized"
+  ],
+  "is_featured": false,
+  "is_new": false,
+  "is_bestseller": true,
+  "is_active": true,
+  "created_at": "2026-03-05T10:00:00Z",
+  "images": [
+    {
+      "id": "img-sleeve-21-1",
+      "url": "/images/5-sleeve/21-899.jpeg",
+      "alt": "Cyber Core 5-Sleeve Tee 21 View 1",
+      "sort_order": 1
+    }
+  ],
+  "variants": [
+    {
+      "id": "var-slv-21-s",
+      "size": "S",
+      "color": "Studio Tone",
+      "color_hex": "#1F1F1F",
+      "sku": "SLV-21-S",
+      "stock": 12
+    },
+    {
+      "id": "var-slv-21-m",
+      "size": "M",
+      "color": "Studio Tone",
+      "color_hex": "#1F1F1F",
+      "sku": "SLV-21-M",
+      "stock": 24
+    },
+    {
+      "id": "var-slv-21-l",
+      "size": "L",
+      "color": "Studio Tone",
+      "color_hex": "#1F1F1F",
+      "sku": "SLV-21-L",
+      "stock": 18
+    },
+    {
+      "id": "var-slv-21-xl",
+      "size": "XL",
+      "color": "Studio Tone",
+      "color_hex": "#1F1F1F",
+      "sku": "SLV-21-XL",
+      "stock": 8
+    }
+  ]
+,
+  category: MOCK_CATEGORIES[0],
+},
+{
+  "id": "prod-sleeve-22",
+  "name": "Washed Olive 5-Sleeve Tee 22",
+  "slug": "5-sleeve-tee-22",
+  "description": "Washed Olive 5-Sleeve Tee 22 crafted with high-density combed jersey cotton. Boxy drop-shoulder silhouette cut with everyday relaxed drape.",
+  "fabric": "100% Super Combed 260-280 GSM Cotton. Pre-shrunk & bio-washed.",
+  "care": "Machine wash cold with like colors. Line dry in shade.",
+  "category_id": "cat-5-sleeve",
+  "price": 899,
+  "compare_at_price": 1499,
+  "discount_percent": 40,
+  "tags": [
+    "Military • Olive",
+    "5-sleeve",
+    "heavyweight",
+    "oversized"
+  ],
+  "is_featured": false,
+  "is_new": true,
+  "is_bestseller": false,
+  "is_active": true,
+  "created_at": "2026-03-06T10:00:00Z",
+  "images": [
+    {
+      "id": "img-sleeve-22-1",
+      "url": "/images/5-sleeve/22-899.jpeg",
+      "alt": "Washed Olive 5-Sleeve Tee 22 View 1",
+      "sort_order": 1
+    }
+  ],
+  "variants": [
+    {
+      "id": "var-slv-22-s",
+      "size": "S",
+      "color": "Studio Tone",
+      "color_hex": "#1F1F1F",
+      "sku": "SLV-22-S",
+      "stock": 12
+    },
+    {
+      "id": "var-slv-22-m",
+      "size": "M",
+      "color": "Studio Tone",
+      "color_hex": "#1F1F1F",
+      "sku": "SLV-22-M",
+      "stock": 24
+    },
+    {
+      "id": "var-slv-22-l",
+      "size": "L",
+      "color": "Studio Tone",
+      "color_hex": "#1F1F1F",
+      "sku": "SLV-22-L",
+      "stock": 18
+    },
+    {
+      "id": "var-slv-22-xl",
+      "size": "XL",
+      "color": "Studio Tone",
+      "color_hex": "#1F1F1F",
+      "sku": "SLV-22-XL",
+      "stock": 8
+    }
+  ]
+,
+  category: MOCK_CATEGORIES[0],
+},
+{
+  "id": "prod-sleeve-23",
+  "name": "Desert Sand 5-Sleeve Tee 23",
+  "slug": "5-sleeve-tee-23",
+  "description": "Desert Sand 5-Sleeve Tee 23 crafted with high-density combed jersey cotton. Boxy drop-shoulder silhouette cut with everyday relaxed drape.",
+  "fabric": "100% Super Combed 260-280 GSM Cotton. Pre-shrunk & bio-washed.",
+  "care": "Machine wash cold with like colors. Line dry in shade.",
+  "category_id": "cat-5-sleeve",
+  "price": 899,
+  "compare_at_price": 1499,
+  "discount_percent": 40,
+  "tags": [
+    "Desert • Sand",
+    "5-sleeve",
+    "heavyweight",
+    "oversized"
+  ],
+  "is_featured": false,
+  "is_new": false,
+  "is_bestseller": true,
+  "is_active": true,
+  "created_at": "2026-03-07T10:00:00Z",
+  "images": [
+    {
+      "id": "img-sleeve-23-1",
+      "url": "/images/5-sleeve/23-899.jpeg",
+      "alt": "Desert Sand 5-Sleeve Tee 23 View 1",
+      "sort_order": 1
+    }
+  ],
+  "variants": [
+    {
+      "id": "var-slv-23-s",
+      "size": "S",
+      "color": "Studio Tone",
+      "color_hex": "#1F1F1F",
+      "sku": "SLV-23-S",
+      "stock": 12
+    },
+    {
+      "id": "var-slv-23-m",
+      "size": "M",
+      "color": "Studio Tone",
+      "color_hex": "#1F1F1F",
+      "sku": "SLV-23-M",
+      "stock": 24
+    },
+    {
+      "id": "var-slv-23-l",
+      "size": "L",
+      "color": "Studio Tone",
+      "color_hex": "#1F1F1F",
+      "sku": "SLV-23-L",
+      "stock": 18
+    },
+    {
+      "id": "var-slv-23-xl",
+      "size": "XL",
+      "color": "Studio Tone",
+      "color_hex": "#1F1F1F",
+      "sku": "SLV-23-XL",
+      "stock": 8
+    }
+  ]
+,
+  category: MOCK_CATEGORIES[0],
+},
+{
+  "id": "prod-hoodie-01",
+  "name": "Stylish Heavyweight Hoodie 01",
+  "slug": "heavyweight-hoodie-01",
+  "description": "Stylish Heavyweight Hoodie 01 cut from custom 400 GSM brushed fleece. Double-layered structured hood with dropped shoulders and ribbed hem.",
+  "fabric": "400 GSM 100% Combed Heavyweight Fleece Cotton.",
+  "care": "Cold gentle wash. Lay flat to dry.",
+  "category_id": "cat-hoodies",
+  "price": 1199,
+  "compare_at_price": 2099,
+  "discount_percent": 43,
+  "tags": [
+    "Fleece 400 GSM • Black",
+    "hoodie",
+    "fleece",
+    "winter"
+  ],
+  "is_featured": true,
+  "is_new": false,
+  "is_bestseller": true,
+  "is_active": true,
+  "created_at": "2026-03-01T10:00:00Z",
+  "images": [
+    {
+      "id": "img-hoodie-01-1",
+      "url": "/images/Hoodies/1-1199.jpeg",
+      "alt": "Stylish Heavyweight Hoodie 01",
+      "sort_order": 1
+    }
+  ],
+  "variants": [
+    {
+      "id": "var-hd-01-s",
+      "size": "S",
+      "color": "Vintage Tone",
+      "color_hex": "#222222",
+      "sku": "HD-01-S",
+      "stock": 10
+    },
+    {
+      "id": "var-hd-01-m",
+      "size": "M",
+      "color": "Vintage Tone",
+      "color_hex": "#222222",
+      "sku": "HD-01-M",
+      "stock": 20
+    },
+    {
+      "id": "var-hd-01-l",
+      "size": "L",
+      "color": "Vintage Tone",
+      "color_hex": "#222222",
+      "sku": "HD-01-L",
+      "stock": 15
+    },
+    {
+      "id": "var-hd-01-xl",
+      "size": "XL",
+      "color": "Vintage Tone",
+      "color_hex": "#222222",
+      "sku": "HD-01-XL",
+      "stock": 6
+    }
+  ]
+,
+  category: MOCK_CATEGORIES[1],
+},
+{
+  "id": "prod-hoodie-02",
+  "name": "Drop-Shoulder Boxy Hoodie 02",
+  "slug": "heavyweight-hoodie-02",
+  "description": "Drop-Shoulder Boxy Hoodie 02 cut from custom 400 GSM brushed fleece. Double-layered structured hood with dropped shoulders and ribbed hem.",
+  "fabric": "400 GSM 100% Combed Heavyweight Fleece Cotton.",
+  "care": "Cold gentle wash. Lay flat to dry.",
+  "category_id": "cat-hoodies",
+  "price": 1199,
+  "compare_at_price": 2099,
+  "discount_percent": 43,
+  "tags": [
+    "Boxy Cut • Charcoal",
+    "hoodie",
+    "fleece",
+    "winter"
+  ],
+  "is_featured": true,
+  "is_new": true,
+  "is_bestseller": true,
+  "is_active": true,
+  "created_at": "2026-03-02T10:00:00Z",
+  "images": [
+    {
+      "id": "img-hoodie-02-1",
+      "url": "/images/Hoodies/2-1199.jpeg",
+      "alt": "Drop-Shoulder Boxy Hoodie 02",
+      "sort_order": 1
+    }
+  ],
+  "variants": [
+    {
+      "id": "var-hd-02-s",
+      "size": "S",
+      "color": "Vintage Tone",
+      "color_hex": "#222222",
+      "sku": "HD-02-S",
+      "stock": 10
+    },
+    {
+      "id": "var-hd-02-m",
+      "size": "M",
+      "color": "Vintage Tone",
+      "color_hex": "#222222",
+      "sku": "HD-02-M",
+      "stock": 20
+    },
+    {
+      "id": "var-hd-02-l",
+      "size": "L",
+      "color": "Vintage Tone",
+      "color_hex": "#222222",
+      "sku": "HD-02-L",
+      "stock": 15
+    },
+    {
+      "id": "var-hd-02-xl",
+      "size": "XL",
+      "color": "Vintage Tone",
+      "color_hex": "#222222",
+      "sku": "HD-02-XL",
+      "stock": 6
+    }
+  ]
+,
+  category: MOCK_CATEGORIES[1],
+},
+{
+  "id": "prod-hoodie-03",
+  "name": "Vintage Washed Hoodie 03",
+  "slug": "heavyweight-hoodie-03",
+  "description": "Vintage Washed Hoodie 03 cut from custom 400 GSM brushed fleece. Double-layered structured hood with dropped shoulders and ribbed hem.",
+  "fabric": "400 GSM 100% Combed Heavyweight Fleece Cotton.",
+  "care": "Cold gentle wash. Lay flat to dry.",
+  "category_id": "cat-hoodies",
+  "price": 1199,
+  "compare_at_price": 2099,
+  "discount_percent": 43,
+  "tags": [
+    "Acid Wash • Grey",
+    "hoodie",
+    "fleece",
+    "winter"
+  ],
+  "is_featured": true,
+  "is_new": false,
+  "is_bestseller": false,
+  "is_active": true,
+  "created_at": "2026-03-03T10:00:00Z",
+  "images": [
+    {
+      "id": "img-hoodie-03-1",
+      "url": "/images/Hoodies/3-1199.jpeg",
+      "alt": "Vintage Washed Hoodie 03",
+      "sort_order": 1
+    }
+  ],
+  "variants": [
+    {
+      "id": "var-hd-03-s",
+      "size": "S",
+      "color": "Vintage Tone",
+      "color_hex": "#222222",
+      "sku": "HD-03-S",
+      "stock": 10
+    },
+    {
+      "id": "var-hd-03-m",
+      "size": "M",
+      "color": "Vintage Tone",
+      "color_hex": "#222222",
+      "sku": "HD-03-M",
+      "stock": 20
+    },
+    {
+      "id": "var-hd-03-l",
+      "size": "L",
+      "color": "Vintage Tone",
+      "color_hex": "#222222",
+      "sku": "HD-03-L",
+      "stock": 15
+    },
+    {
+      "id": "var-hd-03-xl",
+      "size": "XL",
+      "color": "Vintage Tone",
+      "color_hex": "#222222",
+      "sku": "HD-03-XL",
+      "stock": 6
+    }
+  ]
+,
+  category: MOCK_CATEGORIES[1],
+},
+{
+  "id": "prod-hoodie-04",
+  "name": "Minimalist Oversized Hoodie 04",
+  "slug": "heavyweight-hoodie-04",
+  "description": "Minimalist Oversized Hoodie 04 cut from custom 400 GSM brushed fleece. Double-layered structured hood with dropped shoulders and ribbed hem.",
+  "fabric": "400 GSM 100% Combed Heavyweight Fleece Cotton.",
+  "care": "Cold gentle wash. Lay flat to dry.",
+  "category_id": "cat-hoodies",
+  "price": 1199,
+  "compare_at_price": 2099,
+  "discount_percent": 43,
+  "tags": [
+    "Relaxed Fit • Olive",
+    "hoodie",
+    "fleece",
+    "winter"
+  ],
+  "is_featured": false,
+  "is_new": true,
+  "is_bestseller": false,
+  "is_active": true,
+  "created_at": "2026-03-04T10:00:00Z",
+  "images": [
+    {
+      "id": "img-hoodie-04-1",
+      "url": "/images/Hoodies/4-1199.jpeg",
+      "alt": "Minimalist Oversized Hoodie 04",
+      "sort_order": 1
+    }
+  ],
+  "variants": [
+    {
+      "id": "var-hd-04-s",
+      "size": "S",
+      "color": "Vintage Tone",
+      "color_hex": "#222222",
+      "sku": "HD-04-S",
+      "stock": 10
+    },
+    {
+      "id": "var-hd-04-m",
+      "size": "M",
+      "color": "Vintage Tone",
+      "color_hex": "#222222",
+      "sku": "HD-04-M",
+      "stock": 20
+    },
+    {
+      "id": "var-hd-04-l",
+      "size": "L",
+      "color": "Vintage Tone",
+      "color_hex": "#222222",
+      "sku": "HD-04-L",
+      "stock": 15
+    },
+    {
+      "id": "var-hd-04-xl",
+      "size": "XL",
+      "color": "Vintage Tone",
+      "color_hex": "#222222",
+      "sku": "HD-04-XL",
+      "stock": 6
+    }
+  ]
+,
+  category: MOCK_CATEGORIES[1],
+},
+{
+  "id": "prod-hoodie-05",
+  "name": "Street Boxy Fleece Hoodie 05",
+  "slug": "heavyweight-hoodie-05",
+  "description": "Street Boxy Fleece Hoodie 05 cut from custom 400 GSM brushed fleece. Double-layered structured hood with dropped shoulders and ribbed hem.",
+  "fabric": "400 GSM 100% Combed Heavyweight Fleece Cotton.",
+  "care": "Cold gentle wash. Lay flat to dry.",
+  "category_id": "cat-hoodies",
+  "price": 1199,
+  "compare_at_price": 2099,
+  "discount_percent": 43,
+  "tags": [
+    "Fleece • Sand",
+    "hoodie",
+    "fleece",
+    "winter"
+  ],
+  "is_featured": false,
+  "is_new": false,
+  "is_bestseller": false,
+  "is_active": true,
+  "created_at": "2026-03-05T10:00:00Z",
+  "images": [
+    {
+      "id": "img-hoodie-05-1",
+      "url": "/images/Hoodies/5-1199.jpeg",
+      "alt": "Street Boxy Fleece Hoodie 05",
+      "sort_order": 1
+    }
+  ],
+  "variants": [
+    {
+      "id": "var-hd-05-s",
+      "size": "S",
+      "color": "Vintage Tone",
+      "color_hex": "#222222",
+      "sku": "HD-05-S",
+      "stock": 10
+    },
+    {
+      "id": "var-hd-05-m",
+      "size": "M",
+      "color": "Vintage Tone",
+      "color_hex": "#222222",
+      "sku": "HD-05-M",
+      "stock": 20
+    },
+    {
+      "id": "var-hd-05-l",
+      "size": "L",
+      "color": "Vintage Tone",
+      "color_hex": "#222222",
+      "sku": "HD-05-L",
+      "stock": 15
+    },
+    {
+      "id": "var-hd-05-xl",
+      "size": "XL",
+      "color": "Vintage Tone",
+      "color_hex": "#222222",
+      "sku": "HD-05-XL",
+      "stock": 6
+    }
+  ]
+,
+  category: MOCK_CATEGORIES[1],
+},
+{
+  "id": "prod-hoodie-06",
+  "name": "Raw Edge French Terry Hoodie 06",
+  "slug": "heavyweight-hoodie-06",
+  "description": "Raw Edge French Terry Hoodie 06 cut from custom 400 GSM brushed fleece. Double-layered structured hood with dropped shoulders and ribbed hem.",
+  "fabric": "400 GSM 100% Combed Heavyweight Fleece Cotton.",
+  "care": "Cold gentle wash. Lay flat to dry.",
+  "category_id": "cat-hoodies",
+  "price": 1199,
+  "compare_at_price": 2099,
+  "discount_percent": 43,
+  "tags": [
+    "Raw Seam • Ink",
+    "hoodie",
+    "fleece",
+    "winter"
+  ],
+  "is_featured": false,
+  "is_new": true,
+  "is_bestseller": false,
+  "is_active": true,
+  "created_at": "2026-03-06T10:00:00Z",
+  "images": [
+    {
+      "id": "img-hoodie-06-1",
+      "url": "/images/Hoodies/6-1199.jpeg",
+      "alt": "Raw Edge French Terry Hoodie 06",
+      "sort_order": 1
+    }
+  ],
+  "variants": [
+    {
+      "id": "var-hd-06-s",
+      "size": "S",
+      "color": "Vintage Tone",
+      "color_hex": "#222222",
+      "sku": "HD-06-S",
+      "stock": 10
+    },
+    {
+      "id": "var-hd-06-m",
+      "size": "M",
+      "color": "Vintage Tone",
+      "color_hex": "#222222",
+      "sku": "HD-06-M",
+      "stock": 20
+    },
+    {
+      "id": "var-hd-06-l",
+      "size": "L",
+      "color": "Vintage Tone",
+      "color_hex": "#222222",
+      "sku": "HD-06-L",
+      "stock": 15
+    },
+    {
+      "id": "var-hd-06-xl",
+      "size": "XL",
+      "color": "Vintage Tone",
+      "color_hex": "#222222",
+      "sku": "HD-06-XL",
+      "stock": 6
+    }
+  ]
+,
+  category: MOCK_CATEGORIES[1],
+},
+{
+  "id": "prod-hoodie-07",
+  "name": "Architectural Drape Hoodie 07",
+  "slug": "heavyweight-hoodie-07",
+  "description": "Architectural Drape Hoodie 07 cut from custom 400 GSM brushed fleece. Double-layered structured hood with dropped shoulders and ribbed hem.",
+  "fabric": "400 GSM 100% Combed Heavyweight Fleece Cotton.",
+  "care": "Cold gentle wash. Lay flat to dry.",
+  "category_id": "cat-hoodies",
+  "price": 1199,
+  "compare_at_price": 2099,
+  "discount_percent": 43,
+  "tags": [
+    "Heavy Drape • Ash",
+    "hoodie",
+    "fleece",
+    "winter"
+  ],
+  "is_featured": false,
+  "is_new": false,
+  "is_bestseller": false,
+  "is_active": true,
+  "created_at": "2026-03-07T10:00:00Z",
+  "images": [
+    {
+      "id": "img-hoodie-07-1",
+      "url": "/images/Hoodies/7-1199.jpeg",
+      "alt": "Architectural Drape Hoodie 07",
+      "sort_order": 1
+    }
+  ],
+  "variants": [
+    {
+      "id": "var-hd-07-s",
+      "size": "S",
+      "color": "Vintage Tone",
+      "color_hex": "#222222",
+      "sku": "HD-07-S",
+      "stock": 10
+    },
+    {
+      "id": "var-hd-07-m",
+      "size": "M",
+      "color": "Vintage Tone",
+      "color_hex": "#222222",
+      "sku": "HD-07-M",
+      "stock": 20
+    },
+    {
+      "id": "var-hd-07-l",
+      "size": "L",
+      "color": "Vintage Tone",
+      "color_hex": "#222222",
+      "sku": "HD-07-L",
+      "stock": 15
+    },
+    {
+      "id": "var-hd-07-xl",
+      "size": "XL",
+      "color": "Vintage Tone",
+      "color_hex": "#222222",
+      "sku": "HD-07-XL",
+      "stock": 6
+    }
+  ]
+,
+  category: MOCK_CATEGORIES[1],
+},
+{
+  "id": "prod-hoodie-08",
+  "name": "Acid Stonewash Hoodie 08",
+  "slug": "heavyweight-hoodie-08",
+  "description": "Acid Stonewash Hoodie 08 cut from custom 400 GSM brushed fleece. Double-layered structured hood with dropped shoulders and ribbed hem.",
+  "fabric": "400 GSM 100% Combed Heavyweight Fleece Cotton.",
+  "care": "Cold gentle wash. Lay flat to dry.",
+  "category_id": "cat-hoodies",
+  "price": 1199,
+  "compare_at_price": 2099,
+  "discount_percent": 43,
+  "tags": [
+    "Stonewash • Navy",
+    "hoodie",
+    "fleece",
+    "winter"
+  ],
+  "is_featured": false,
+  "is_new": true,
+  "is_bestseller": false,
+  "is_active": true,
+  "created_at": "2026-03-08T10:00:00Z",
+  "images": [
+    {
+      "id": "img-hoodie-08-1",
+      "url": "/images/Hoodies/8-1199.jpeg",
+      "alt": "Acid Stonewash Hoodie 08",
+      "sort_order": 1
+    }
+  ],
+  "variants": [
+    {
+      "id": "var-hd-08-s",
+      "size": "S",
+      "color": "Vintage Tone",
+      "color_hex": "#222222",
+      "sku": "HD-08-S",
+      "stock": 10
+    },
+    {
+      "id": "var-hd-08-m",
+      "size": "M",
+      "color": "Vintage Tone",
+      "color_hex": "#222222",
+      "sku": "HD-08-M",
+      "stock": 20
+    },
+    {
+      "id": "var-hd-08-l",
+      "size": "L",
+      "color": "Vintage Tone",
+      "color_hex": "#222222",
+      "sku": "HD-08-L",
+      "stock": 15
+    },
+    {
+      "id": "var-hd-08-xl",
+      "size": "XL",
+      "color": "Vintage Tone",
+      "color_hex": "#222222",
+      "sku": "HD-08-XL",
+      "stock": 6
+    }
+  ]
+,
+  category: MOCK_CATEGORIES[1],
+},
+{
+  "id": "prod-hoodie-10",
+  "name": "Stealth Charcoal Hoodie 10",
+  "slug": "heavyweight-hoodie-10",
+  "description": "Stealth Charcoal Hoodie 10 cut from custom 400 GSM brushed fleece. Double-layered structured hood with dropped shoulders and ribbed hem.",
+  "fabric": "400 GSM 100% Combed Heavyweight Fleece Cotton.",
+  "care": "Cold gentle wash. Lay flat to dry.",
+  "category_id": "cat-hoodies",
+  "price": 1199,
+  "compare_at_price": 2099,
+  "discount_percent": 43,
+  "tags": [
+    "Stealth Cut • Pitch",
+    "hoodie",
+    "fleece",
+    "winter"
+  ],
+  "is_featured": false,
+  "is_new": false,
+  "is_bestseller": false,
+  "is_active": true,
+  "created_at": "2026-03-01T10:00:00Z",
+  "images": [
+    {
+      "id": "img-hoodie-10-1",
+      "url": "/images/Hoodies/10-1199.jpeg",
+      "alt": "Stealth Charcoal Hoodie 10",
+      "sort_order": 1
+    }
+  ],
+  "variants": [
+    {
+      "id": "var-hd-10-s",
+      "size": "S",
+      "color": "Vintage Tone",
+      "color_hex": "#222222",
+      "sku": "HD-10-S",
+      "stock": 10
+    },
+    {
+      "id": "var-hd-10-m",
+      "size": "M",
+      "color": "Vintage Tone",
+      "color_hex": "#222222",
+      "sku": "HD-10-M",
+      "stock": 20
+    },
+    {
+      "id": "var-hd-10-l",
+      "size": "L",
+      "color": "Vintage Tone",
+      "color_hex": "#222222",
+      "sku": "HD-10-L",
+      "stock": 15
+    },
+    {
+      "id": "var-hd-10-xl",
+      "size": "XL",
+      "color": "Vintage Tone",
+      "color_hex": "#222222",
+      "sku": "HD-10-XL",
+      "stock": 6
+    }
+  ]
+,
+  category: MOCK_CATEGORIES[1],
+},
+{
+  "id": "prod-pant-01",
+  "name": "Tactical Multi-Pocket Cargo 01",
+  "slug": "tactical-pants-01",
+  "description": "Tactical Multi-Pocket Cargo 01 designed with volume darts, multi-functional pockets and relaxed wide puddle hem for street aesthetics.",
+  "fabric": "High-density Cotton Twill with reinforced ripstop knee panels.",
+  "care": "Machine wash cold. Hang to dry.",
+  "category_id": "cat-pants",
+  "price": 1149,
+  "compare_at_price": 1999,
+  "discount_percent": 43,
+  "tags": [
+    "Ripstop Cotton • Olive",
+    "pants",
+    "cargo",
+    "tactical"
+  ],
+  "is_featured": true,
+  "is_new": true,
+  "is_bestseller": true,
+  "is_active": true,
+  "created_at": "2026-03-01T10:00:00Z",
+  "images": [
+    {
+      "id": "img-pant-01-1",
+      "url": "/images/pants/1-1149.jpeg",
+      "alt": "Tactical Multi-Pocket Cargo 01",
+      "sort_order": 1
+    }
+  ],
+  "variants": [
+    {
+      "id": "var-pnt-01-30",
+      "size": "30",
+      "color": "Earth Shadow",
+      "color_hex": "#3B3D36",
+      "sku": "PNT-01-30",
+      "stock": 8
+    },
+    {
+      "id": "var-pnt-01-32",
+      "size": "32",
+      "color": "Earth Shadow",
+      "color_hex": "#3B3D36",
+      "sku": "PNT-01-32",
+      "stock": 16
+    },
+    {
+      "id": "var-pnt-01-34",
+      "size": "34",
+      "color": "Earth Shadow",
+      "color_hex": "#3B3D36",
+      "sku": "PNT-01-34",
+      "stock": 14
+    },
+    {
+      "id": "var-pnt-01-36",
+      "size": "36",
+      "color": "Earth Shadow",
+      "color_hex": "#3B3D36",
+      "sku": "PNT-01-36",
+      "stock": 6
+    }
+  ]
+,
+  category: MOCK_CATEGORIES[2],
+},
+{
+  "id": "prod-pant-02",
+  "name": "Relaxed Parachute Cargo 02",
+  "slug": "tactical-pants-02",
+  "description": "Relaxed Parachute Cargo 02 designed with volume darts, multi-functional pockets and relaxed wide puddle hem for street aesthetics.",
+  "fabric": "High-density Cotton Twill with reinforced ripstop knee panels.",
+  "care": "Machine wash cold. Hang to dry.",
+  "category_id": "cat-pants",
+  "price": 1149,
+  "compare_at_price": 1999,
+  "discount_percent": 43,
+  "tags": [
+    "Baggy Cut • Black",
+    "pants",
+    "cargo",
+    "tactical"
+  ],
+  "is_featured": true,
+  "is_new": false,
+  "is_bestseller": false,
+  "is_active": true,
+  "created_at": "2026-03-02T10:00:00Z",
+  "images": [
+    {
+      "id": "img-pant-02-1",
+      "url": "/images/pants/2-11499.jpeg",
+      "alt": "Relaxed Parachute Cargo 02",
+      "sort_order": 1
+    }
+  ],
+  "variants": [
+    {
+      "id": "var-pnt-02-30",
+      "size": "30",
+      "color": "Earth Shadow",
+      "color_hex": "#3B3D36",
+      "sku": "PNT-02-30",
+      "stock": 8
+    },
+    {
+      "id": "var-pnt-02-32",
+      "size": "32",
+      "color": "Earth Shadow",
+      "color_hex": "#3B3D36",
+      "sku": "PNT-02-32",
+      "stock": 16
+    },
+    {
+      "id": "var-pnt-02-34",
+      "size": "34",
+      "color": "Earth Shadow",
+      "color_hex": "#3B3D36",
+      "sku": "PNT-02-34",
+      "stock": 14
+    },
+    {
+      "id": "var-pnt-02-36",
+      "size": "36",
+      "color": "Earth Shadow",
+      "color_hex": "#3B3D36",
+      "sku": "PNT-02-36",
+      "stock": 6
+    }
+  ]
+,
+  category: MOCK_CATEGORIES[2],
+},
+{
+  "id": "prod-pant-03",
+  "name": "Wide-Leg Utility Cargo 03",
+  "slug": "tactical-pants-03",
+  "description": "Wide-Leg Utility Cargo 03 designed with volume darts, multi-functional pockets and relaxed wide puddle hem for street aesthetics.",
+  "fabric": "High-density Cotton Twill with reinforced ripstop knee panels.",
+  "care": "Machine wash cold. Hang to dry.",
+  "category_id": "cat-pants",
+  "price": 1149,
+  "compare_at_price": 1999,
+  "discount_percent": 43,
+  "tags": [
+    "Wide Leg • Grey",
+    "pants",
+    "cargo",
+    "tactical"
+  ],
+  "is_featured": true,
+  "is_new": true,
+  "is_bestseller": true,
+  "is_active": true,
+  "created_at": "2026-03-03T10:00:00Z",
+  "images": [
+    {
+      "id": "img-pant-03-1",
+      "url": "/images/pants/3-1149.jpeg",
+      "alt": "Wide-Leg Utility Cargo 03",
+      "sort_order": 1
+    }
+  ],
+  "variants": [
+    {
+      "id": "var-pnt-03-30",
+      "size": "30",
+      "color": "Earth Shadow",
+      "color_hex": "#3B3D36",
+      "sku": "PNT-03-30",
+      "stock": 8
+    },
+    {
+      "id": "var-pnt-03-32",
+      "size": "32",
+      "color": "Earth Shadow",
+      "color_hex": "#3B3D36",
+      "sku": "PNT-03-32",
+      "stock": 16
+    },
+    {
+      "id": "var-pnt-03-34",
+      "size": "34",
+      "color": "Earth Shadow",
+      "color_hex": "#3B3D36",
+      "sku": "PNT-03-34",
+      "stock": 14
+    },
+    {
+      "id": "var-pnt-03-36",
+      "size": "36",
+      "color": "Earth Shadow",
+      "color_hex": "#3B3D36",
+      "sku": "PNT-03-36",
+      "stock": 6
+    }
+  ]
+,
+  category: MOCK_CATEGORIES[2],
+},
+{
+  "id": "prod-pant-04",
+  "name": "Baggy Street Cargo Pant 04",
+  "slug": "tactical-pants-04",
+  "description": "Baggy Street Cargo Pant 04 designed with volume darts, multi-functional pockets and relaxed wide puddle hem for street aesthetics.",
+  "fabric": "High-density Cotton Twill with reinforced ripstop knee panels.",
+  "care": "Machine wash cold. Hang to dry.",
+  "category_id": "cat-pants",
+  "price": 1149,
+  "compare_at_price": 1999,
+  "discount_percent": 43,
+  "tags": [
+    "Drawcord • Charcoal",
+    "pants",
+    "cargo",
+    "tactical"
+  ],
+  "is_featured": false,
+  "is_new": false,
+  "is_bestseller": false,
+  "is_active": true,
+  "created_at": "2026-03-04T10:00:00Z",
+  "images": [
+    {
+      "id": "img-pant-04-1",
+      "url": "/images/pants/4-1149.jpeg",
+      "alt": "Baggy Street Cargo Pant 04",
+      "sort_order": 1
+    }
+  ],
+  "variants": [
+    {
+      "id": "var-pnt-04-30",
+      "size": "30",
+      "color": "Earth Shadow",
+      "color_hex": "#3B3D36",
+      "sku": "PNT-04-30",
+      "stock": 8
+    },
+    {
+      "id": "var-pnt-04-32",
+      "size": "32",
+      "color": "Earth Shadow",
+      "color_hex": "#3B3D36",
+      "sku": "PNT-04-32",
+      "stock": 16
+    },
+    {
+      "id": "var-pnt-04-34",
+      "size": "34",
+      "color": "Earth Shadow",
+      "color_hex": "#3B3D36",
+      "sku": "PNT-04-34",
+      "stock": 14
+    },
+    {
+      "id": "var-pnt-04-36",
+      "size": "36",
+      "color": "Earth Shadow",
+      "color_hex": "#3B3D36",
+      "sku": "PNT-04-36",
+      "stock": 6
+    }
+  ]
+,
+  category: MOCK_CATEGORIES[2],
+},
+{
+  "id": "prod-pant-05",
+  "name": "Drawstring Utility Pant 05",
+  "slug": "tactical-pants-05",
+  "description": "Drawstring Utility Pant 05 designed with volume darts, multi-functional pockets and relaxed wide puddle hem for street aesthetics.",
+  "fabric": "High-density Cotton Twill with reinforced ripstop knee panels.",
+  "care": "Machine wash cold. Hang to dry.",
+  "category_id": "cat-pants",
+  "price": 1149,
+  "compare_at_price": 1999,
+  "discount_percent": 43,
+  "tags": [
+    "Streetwear • Sand",
+    "pants",
+    "cargo",
+    "tactical"
+  ],
+  "is_featured": false,
+  "is_new": true,
+  "is_bestseller": false,
+  "is_active": true,
+  "created_at": "2026-03-05T10:00:00Z",
+  "images": [
+    {
+      "id": "img-pant-05-1",
+      "url": "/images/pants/5-1149.jpeg",
+      "alt": "Drawstring Utility Pant 05",
+      "sort_order": 1
+    }
+  ],
+  "variants": [
+    {
+      "id": "var-pnt-05-30",
+      "size": "30",
+      "color": "Earth Shadow",
+      "color_hex": "#3B3D36",
+      "sku": "PNT-05-30",
+      "stock": 8
+    },
+    {
+      "id": "var-pnt-05-32",
+      "size": "32",
+      "color": "Earth Shadow",
+      "color_hex": "#3B3D36",
+      "sku": "PNT-05-32",
+      "stock": 16
+    },
+    {
+      "id": "var-pnt-05-34",
+      "size": "34",
+      "color": "Earth Shadow",
+      "color_hex": "#3B3D36",
+      "sku": "PNT-05-34",
+      "stock": 14
+    },
+    {
+      "id": "var-pnt-05-36",
+      "size": "36",
+      "color": "Earth Shadow",
+      "color_hex": "#3B3D36",
+      "sku": "PNT-05-36",
+      "stock": 6
+    }
+  ]
+,
+  category: MOCK_CATEGORIES[2],
+},
+{
+  "id": "prod-pant-06",
+  "name": "Straight Cut Tactical Pant 06",
+  "slug": "tactical-pants-06",
+  "description": "Straight Cut Tactical Pant 06 designed with volume darts, multi-functional pockets and relaxed wide puddle hem for street aesthetics.",
+  "fabric": "High-density Cotton Twill with reinforced ripstop knee panels.",
+  "care": "Machine wash cold. Hang to dry.",
+  "category_id": "cat-pants",
+  "price": 1149,
+  "compare_at_price": 1999,
+  "discount_percent": 43,
+  "tags": [
+    "Straight Fit • Black",
+    "pants",
+    "cargo",
+    "tactical"
+  ],
+  "is_featured": false,
+  "is_new": false,
+  "is_bestseller": false,
+  "is_active": true,
+  "created_at": "2026-03-06T10:00:00Z",
+  "images": [
+    {
+      "id": "img-pant-06-1",
+      "url": "/images/pants/6-1149.jpeg",
+      "alt": "Straight Cut Tactical Pant 06",
+      "sort_order": 1
+    }
+  ],
+  "variants": [
+    {
+      "id": "var-pnt-06-30",
+      "size": "30",
+      "color": "Earth Shadow",
+      "color_hex": "#3B3D36",
+      "sku": "PNT-06-30",
+      "stock": 8
+    },
+    {
+      "id": "var-pnt-06-32",
+      "size": "32",
+      "color": "Earth Shadow",
+      "color_hex": "#3B3D36",
+      "sku": "PNT-06-32",
+      "stock": 16
+    },
+    {
+      "id": "var-pnt-06-34",
+      "size": "34",
+      "color": "Earth Shadow",
+      "color_hex": "#3B3D36",
+      "sku": "PNT-06-34",
+      "stock": 14
+    },
+    {
+      "id": "var-pnt-06-36",
+      "size": "36",
+      "color": "Earth Shadow",
+      "color_hex": "#3B3D36",
+      "sku": "PNT-06-36",
+      "stock": 6
+    }
+  ]
+,
+  category: MOCK_CATEGORIES[2],
+},
+{
+  "id": "prod-shirt-01",
+  "name": "Textured Camp Collar Shirt 01",
+  "slug": "resort-shirt-01",
+  "description": "Textured Camp Collar Shirt 01 featuring camp collar, relaxed resort drape, and open weave texture suited for all-day breathability.",
+  "fabric": "Pure Flax Linen & Combed Cotton Blend.",
+  "care": "Hand wash cold or gentle machine wash.",
+  "category_id": "cat-shirts",
+  "price": 1199,
+  "compare_at_price": 2099,
+  "discount_percent": 43,
+  "tags": [
+    "Camp Collar • Ecru",
+    "shirts",
+    "camp-collar",
+    "resort"
+  ],
+  "is_featured": true,
+  "is_new": true,
+  "is_bestseller": true,
+  "is_active": true,
+  "created_at": "2026-03-01T10:00:00Z",
+  "images": [
+    {
+      "id": "img-shirt-01-1",
+      "url": "/images/shirts/1-1199.jpeg",
+      "alt": "Textured Camp Collar Shirt 01",
+      "sort_order": 1
+    }
+  ],
+  "variants": [
+    {
+      "id": "var-shrt-01-s",
+      "size": "S",
+      "color": "Natural Weave",
+      "color_hex": "#EAE6DF",
+      "sku": "SHR-01-S",
+      "stock": 8
+    },
+    {
+      "id": "var-shrt-01-m",
+      "size": "M",
+      "color": "Natural Weave",
+      "color_hex": "#EAE6DF",
+      "sku": "SHR-01-M",
+      "stock": 16
+    },
+    {
+      "id": "var-shrt-01-l",
+      "size": "L",
+      "color": "Natural Weave",
+      "color_hex": "#EAE6DF",
+      "sku": "SHR-01-L",
+      "stock": 12
+    }
+  ]
+,
+  category: MOCK_CATEGORIES[3],
+},
+{
+  "id": "prod-shirt-02",
+  "name": "Relaxed Boxy Resort Shirt 02",
+  "slug": "resort-shirt-02",
+  "description": "Relaxed Boxy Resort Shirt 02 featuring camp collar, relaxed resort drape, and open weave texture suited for all-day breathability.",
+  "fabric": "Pure Flax Linen & Combed Cotton Blend.",
+  "care": "Hand wash cold or gentle machine wash.",
+  "category_id": "cat-shirts",
+  "price": 1199,
+  "compare_at_price": 2099,
+  "discount_percent": 43,
+  "tags": [
+    "Resort Cut • Mocha",
+    "shirts",
+    "camp-collar",
+    "resort"
+  ],
+  "is_featured": true,
+  "is_new": true,
+  "is_bestseller": false,
+  "is_active": true,
+  "created_at": "2026-03-02T10:00:00Z",
+  "images": [
+    {
+      "id": "img-shirt-02-1",
+      "url": "/images/shirts/2-1199.jpeg",
+      "alt": "Relaxed Boxy Resort Shirt 02",
+      "sort_order": 1
+    }
+  ],
+  "variants": [
+    {
+      "id": "var-shrt-02-s",
+      "size": "S",
+      "color": "Natural Weave",
+      "color_hex": "#EAE6DF",
+      "sku": "SHR-02-S",
+      "stock": 8
+    },
+    {
+      "id": "var-shrt-02-m",
+      "size": "M",
+      "color": "Natural Weave",
+      "color_hex": "#EAE6DF",
+      "sku": "SHR-02-M",
+      "stock": 16
+    },
+    {
+      "id": "var-shrt-02-l",
+      "size": "L",
+      "color": "Natural Weave",
+      "color_hex": "#EAE6DF",
+      "sku": "SHR-02-L",
+      "stock": 12
+    }
+  ]
+,
+  category: MOCK_CATEGORIES[3],
+},
+{
+  "id": "prod-shirt-03",
+  "name": "Open Weave Linen Shirt 03",
+  "slug": "resort-shirt-03",
+  "description": "Open Weave Linen Shirt 03 featuring camp collar, relaxed resort drape, and open weave texture suited for all-day breathability.",
+  "fabric": "Pure Flax Linen & Combed Cotton Blend.",
+  "care": "Hand wash cold or gentle machine wash.",
+  "category_id": "cat-shirts",
+  "price": 1199,
+  "compare_at_price": 2099,
+  "discount_percent": 43,
+  "tags": [
+    "Linen Blend • White",
+    "shirts",
+    "camp-collar",
+    "resort"
+  ],
+  "is_featured": true,
+  "is_new": true,
+  "is_bestseller": false,
+  "is_active": true,
+  "created_at": "2026-03-03T10:00:00Z",
+  "images": [
+    {
+      "id": "img-shirt-03-1",
+      "url": "/images/shirts/3-1199.jpeg",
+      "alt": "Open Weave Linen Shirt 03",
+      "sort_order": 1
+    }
+  ],
+  "variants": [
+    {
+      "id": "var-shrt-03-s",
+      "size": "S",
+      "color": "Natural Weave",
+      "color_hex": "#EAE6DF",
+      "sku": "SHR-03-S",
+      "stock": 8
+    },
+    {
+      "id": "var-shrt-03-m",
+      "size": "M",
+      "color": "Natural Weave",
+      "color_hex": "#EAE6DF",
+      "sku": "SHR-03-M",
+      "stock": 16
+    },
+    {
+      "id": "var-shrt-03-l",
+      "size": "L",
+      "color": "Natural Weave",
+      "color_hex": "#EAE6DF",
+      "sku": "SHR-03-L",
+      "stock": 12
+    }
+  ]
+,
+  category: MOCK_CATEGORIES[3],
+},
 ];
 
 export const MOCK_REELS: Reel[] = [
   {
     id: "reel-1",
-    title: "Heavyweight Boxy Cut in Motion",
+    title: "5-Sleeve Boxy Cut in Motion",
     video_url: "https://assets.mixkit.co/videos/preview/mixkit-man-dancing-under-neon-lights-1230-large.mp4",
-    poster_url: "/images/pdp-detail-1.jpg",
-    product_id: "prod-1",
+    poster_url: "/images/5-sleeve/1.jpeg",
+    product_id: "prod-sleeve-01",
     product: MOCK_PRODUCTS[0],
     sort_order: 1,
     is_active: true,
   },
   {
     id: "reel-2",
-    title: "Textured Weave Natural Flow",
+    title: "Heavyweight Fleece Dropped Flow",
     video_url: "https://assets.mixkit.co/videos/preview/mixkit-fashion-model-in-an-outdoor-photoshoot-39878-large.mp4",
-    poster_url: "/images/prod-linen-shirt.jpg",
-    product_id: "prod-3",
-    product: MOCK_PRODUCTS[2],
+    poster_url: "/images/Hoodies/1-1199.jpeg",
+    product_id: "prod-hoodie-01",
+    product: MOCK_PRODUCTS[23],
     sort_order: 2,
     is_active: true,
   },
   {
     id: "reel-3",
-    title: "Double-Pleat Hem Walk",
+    title: "Tactical Utility Wide Walk",
     video_url: "https://assets.mixkit.co/videos/preview/mixkit-young-man-walking-down-a-city-street-41556-large.mp4",
-    poster_url: "/images/prod-utility-cargo.jpg",
-    product_id: "prod-4",
-    product: MOCK_PRODUCTS[3],
+    poster_url: "/images/pants/1-1149.jpeg",
+    product_id: "prod-pant-01",
+    product: MOCK_PRODUCTS[32],
     sort_order: 3,
     is_active: true,
   },
   {
     id: "reel-4",
-    title: "Studio Chore Utility Fit",
+    title: "Open Weave Camp Resort Fit",
     video_url: "https://assets.mixkit.co/videos/preview/mixkit-man-dancing-under-neon-lights-1230-large.mp4",
-    poster_url: "/images/cat-jackets.jpg",
-    product_id: "prod-5",
-    product: MOCK_PRODUCTS[4],
+    poster_url: "/images/shirts/1-1199.jpeg",
+    product_id: "prod-shirt-01",
+    product: MOCK_PRODUCTS[38],
     sort_order: 4,
     is_active: true,
   },
