@@ -51,9 +51,9 @@ export const MOCK_CATEGORIES: Category[] = [
 export const MOCK_PRODUCTS: Product[] = [
 {
   "id": "prod-sleeve-01",
-  "name": "Boxy 5-Sleeve Tee 01",
+  "name": "Boxy Heavyweight 5-Sleeve Tee",
   "slug": "5-sleeve-tee-01",
-  "description": "Boxy 5-Sleeve Tee 01 crafted with high-density combed jersey cotton. Boxy drop-shoulder silhouette cut with everyday relaxed drape.",
+  "description": "Boxy Heavyweight 5-Sleeve Tee crafted with high-density combed jersey cotton. Boxy drop-shoulder silhouette cut with everyday relaxed drape.",
   "fabric": "100% Super Combed 260-280 GSM Cotton. Pre-shrunk & bio-washed.",
   "care": "Machine wash cold with like colors. Line dry in shade.",
   "category_id": "cat-5-sleeve",
@@ -75,7 +75,7 @@ export const MOCK_PRODUCTS: Product[] = [
     {
       "id": "img-sleeve-01-1",
       "url": "/images/5-sleeve/1.jpeg",
-      "alt": "Boxy 5-Sleeve Tee 01 View 1",
+      "alt": "Boxy Heavyweight 5-Sleeve Tee",
       "sort_order": 1
     }
   ],
@@ -118,9 +118,9 @@ export const MOCK_PRODUCTS: Product[] = [
 },
 {
   "id": "prod-sleeve-02",
-  "name": "Drop-Shoulder 5-Sleeve Tee 02",
+  "name": "Drop-Shoulder 5-Sleeve Tee",
   "slug": "5-sleeve-tee-02",
-  "description": "Drop-Shoulder 5-Sleeve Tee 02 crafted with high-density combed jersey cotton. Boxy drop-shoulder silhouette cut with everyday relaxed drape.",
+  "description": "Drop-Shoulder 5-Sleeve Tee crafted with high-density combed jersey cotton. Boxy drop-shoulder silhouette cut with everyday relaxed drape.",
   "fabric": "100% Super Combed 260-280 GSM Cotton. Pre-shrunk & bio-washed.",
   "care": "Machine wash cold with like colors. Line dry in shade.",
   "category_id": "cat-5-sleeve",
@@ -142,7 +142,7 @@ export const MOCK_PRODUCTS: Product[] = [
     {
       "id": "img-sleeve-02-1",
       "url": "/images/5-sleeve/2.jpeg",
-      "alt": "Drop-Shoulder 5-Sleeve Tee 02 View 1",
+      "alt": "Drop-Shoulder 5-Sleeve Tee",
       "sort_order": 1
     }
   ],
@@ -185,9 +185,9 @@ export const MOCK_PRODUCTS: Product[] = [
 },
 {
   "id": "prod-sleeve-03",
-  "name": "Heavyweight 5-Sleeve Tee 03",
+  "name": "Heavyweight Carbon 5-Sleeve Tee",
   "slug": "5-sleeve-tee-03",
-  "description": "Heavyweight 5-Sleeve Tee 03 crafted with high-density combed jersey cotton. Boxy drop-shoulder silhouette cut with everyday relaxed drape.",
+  "description": "Heavyweight Carbon 5-Sleeve Tee crafted with high-density combed jersey cotton. Boxy drop-shoulder silhouette cut with everyday relaxed drape.",
   "fabric": "100% Super Combed 260-280 GSM Cotton. Pre-shrunk & bio-washed.",
   "care": "Machine wash cold with like colors. Line dry in shade.",
   "category_id": "cat-5-sleeve",
@@ -209,7 +209,7 @@ export const MOCK_PRODUCTS: Product[] = [
     {
       "id": "img-sleeve-03-1",
       "url": "/images/5-sleeve/3(849).jpeg",
-      "alt": "Heavyweight 5-Sleeve Tee 03 View 1",
+      "alt": "Heavyweight Carbon 5-Sleeve Tee",
       "sort_order": 1
     }
   ],
@@ -252,9 +252,9 @@ export const MOCK_PRODUCTS: Product[] = [
 },
 {
   "id": "prod-sleeve-04",
-  "name": "Acid Stonewash 5-Sleeve Tee 04",
+  "name": "Acid Stonewash 5-Sleeve Tee",
   "slug": "5-sleeve-tee-04",
-  "description": "Acid Stonewash 5-Sleeve Tee 04 crafted with high-density combed jersey cotton. Boxy drop-shoulder silhouette cut with everyday relaxed drape.",
+  "description": "Acid Stonewash 5-Sleeve Tee crafted with high-density combed jersey cotton. Boxy drop-shoulder silhouette cut with everyday relaxed drape.",
   "fabric": "100% Super Combed 260-280 GSM Cotton. Pre-shrunk & bio-washed.",
   "care": "Machine wash cold with like colors. Line dry in shade.",
   "category_id": "cat-5-sleeve",
@@ -276,7 +276,7 @@ export const MOCK_PRODUCTS: Product[] = [
     {
       "id": "img-sleeve-04-1",
       "url": "/images/5-sleeve/4-849.jpeg",
-      "alt": "Acid Stonewash 5-Sleeve Tee 04 View 1",
+      "alt": "Acid Stonewash 5-Sleeve Tee",
       "sort_order": 1
     }
   ],
@@ -319,9 +319,9 @@ export const MOCK_PRODUCTS: Product[] = [
 },
 {
   "id": "prod-sleeve-05",
-  "name": "Minimalist Core 5-Sleeve Tee 05",
+  "name": "Minimalist Core 5-Sleeve Tee",
   "slug": "5-sleeve-tee-05",
-  "description": "Minimalist Core 5-Sleeve Tee 05 crafted with high-density combed jersey cotton. Boxy drop-shoulder silhouette cut with everyday relaxed drape.",
+  "description": "Minimalist Core 5-Sleeve Tee crafted with high-density combed jersey cotton. Boxy drop-shoulder silhouette cut with everyday relaxed drape.",
   "fabric": "100% Super Combed 260-280 GSM Cotton. Pre-shrunk & bio-washed.",
   "care": "Machine wash cold with like colors. Line dry in shade.",
   "category_id": "cat-5-sleeve",
@@ -343,7 +343,7 @@ export const MOCK_PRODUCTS: Product[] = [
     {
       "id": "img-sleeve-05-1",
       "url": "/images/5-sleeve/5-799.jpeg",
-      "alt": "Minimalist Core 5-Sleeve Tee 05 View 1",
+      "alt": "Minimalist Core 5-Sleeve Tee",
       "sort_order": 1
     }
   ],
@@ -386,9 +386,9 @@ export const MOCK_PRODUCTS: Product[] = [
 },
 {
   "id": "prod-sleeve-06",
-  "name": "Streetwear Heavyweight Tee 06",
+  "name": "Streetwear Heavyweight Tee",
   "slug": "5-sleeve-tee-06",
-  "description": "Streetwear Heavyweight Tee 06 crafted with high-density combed jersey cotton. Boxy drop-shoulder silhouette cut with everyday relaxed drape.",
+  "description": "Streetwear Heavyweight Tee crafted with high-density combed jersey cotton. Boxy drop-shoulder silhouette cut with everyday relaxed drape.",
   "fabric": "100% Super Combed 260-280 GSM Cotton. Pre-shrunk & bio-washed.",
   "care": "Machine wash cold with like colors. Line dry in shade.",
   "category_id": "cat-5-sleeve",
@@ -410,7 +410,7 @@ export const MOCK_PRODUCTS: Product[] = [
     {
       "id": "img-sleeve-06-1",
       "url": "/images/5-sleeve/6-849.jpeg",
-      "alt": "Streetwear Heavyweight Tee 06 View 1",
+      "alt": "Streetwear Heavyweight Tee",
       "sort_order": 1
     }
   ],
@@ -453,9 +453,9 @@ export const MOCK_PRODUCTS: Product[] = [
 },
 {
   "id": "prod-sleeve-07",
-  "name": "Raw Seam Studio 5-Sleeve Tee 07",
+  "name": "Raw Seam Studio 5-Sleeve Tee",
   "slug": "5-sleeve-tee-07",
-  "description": "Raw Seam Studio 5-Sleeve Tee 07 crafted with high-density combed jersey cotton. Boxy drop-shoulder silhouette cut with everyday relaxed drape.",
+  "description": "Raw Seam Studio 5-Sleeve Tee crafted with high-density combed jersey cotton. Boxy drop-shoulder silhouette cut with everyday relaxed drape.",
   "fabric": "100% Super Combed 260-280 GSM Cotton. Pre-shrunk & bio-washed.",
   "care": "Machine wash cold with like colors. Line dry in shade.",
   "category_id": "cat-5-sleeve",
@@ -477,7 +477,7 @@ export const MOCK_PRODUCTS: Product[] = [
     {
       "id": "img-sleeve-07-1",
       "url": "/images/5-sleeve/7-849.jpeg",
-      "alt": "Raw Seam Studio 5-Sleeve Tee 07 View 1",
+      "alt": "Raw Seam Studio 5-Sleeve Tee",
       "sort_order": 1
     }
   ],
@@ -520,9 +520,9 @@ export const MOCK_PRODUCTS: Product[] = [
 },
 {
   "id": "prod-sleeve-08",
-  "name": "Washed Carbon 5-Sleeve Tee 08",
+  "name": "Washed Carbon 5-Sleeve Tee",
   "slug": "5-sleeve-tee-08",
-  "description": "Washed Carbon 5-Sleeve Tee 08 crafted with high-density combed jersey cotton. Boxy drop-shoulder silhouette cut with everyday relaxed drape.",
+  "description": "Washed Carbon 5-Sleeve Tee crafted with high-density combed jersey cotton. Boxy drop-shoulder silhouette cut with everyday relaxed drape.",
   "fabric": "100% Super Combed 260-280 GSM Cotton. Pre-shrunk & bio-washed.",
   "care": "Machine wash cold with like colors. Line dry in shade.",
   "category_id": "cat-5-sleeve",
@@ -544,7 +544,7 @@ export const MOCK_PRODUCTS: Product[] = [
     {
       "id": "img-sleeve-08-1",
       "url": "/images/5-sleeve/8-849.jpeg",
-      "alt": "Washed Carbon 5-Sleeve Tee 08 View 1",
+      "alt": "Washed Carbon 5-Sleeve Tee",
       "sort_order": 1
     }
   ],
@@ -587,9 +587,9 @@ export const MOCK_PRODUCTS: Product[] = [
 },
 {
   "id": "prod-sleeve-09",
-  "name": "Archive Graphic 5-Sleeve Tee 09",
+  "name": "Archive Graphic 5-Sleeve Tee",
   "slug": "5-sleeve-tee-09",
-  "description": "Archive Graphic 5-Sleeve Tee 09 crafted with high-density combed jersey cotton. Boxy drop-shoulder silhouette cut with everyday relaxed drape.",
+  "description": "Archive Graphic 5-Sleeve Tee crafted with high-density combed jersey cotton. Boxy drop-shoulder silhouette cut with everyday relaxed drape.",
   "fabric": "100% Super Combed 260-280 GSM Cotton. Pre-shrunk & bio-washed.",
   "care": "Machine wash cold with like colors. Line dry in shade.",
   "category_id": "cat-5-sleeve",
@@ -611,7 +611,7 @@ export const MOCK_PRODUCTS: Product[] = [
     {
       "id": "img-sleeve-09-1",
       "url": "/images/5-sleeve/9-949.jpeg",
-      "alt": "Archive Graphic 5-Sleeve Tee 09 View 1",
+      "alt": "Archive Graphic 5-Sleeve Tee",
       "sort_order": 1
     }
   ],
@@ -654,9 +654,9 @@ export const MOCK_PRODUCTS: Product[] = [
 },
 {
   "id": "prod-sleeve-10",
-  "name": "Vintage Drape 5-Sleeve Tee 10",
+  "name": "Vintage Drape 5-Sleeve Tee",
   "slug": "5-sleeve-tee-10",
-  "description": "Vintage Drape 5-Sleeve Tee 10 crafted with high-density combed jersey cotton. Boxy drop-shoulder silhouette cut with everyday relaxed drape.",
+  "description": "Vintage Drape 5-Sleeve Tee crafted with high-density combed jersey cotton. Boxy drop-shoulder silhouette cut with everyday relaxed drape.",
   "fabric": "100% Super Combed 260-280 GSM Cotton. Pre-shrunk & bio-washed.",
   "care": "Machine wash cold with like colors. Line dry in shade.",
   "category_id": "cat-5-sleeve",
@@ -678,7 +678,7 @@ export const MOCK_PRODUCTS: Product[] = [
     {
       "id": "img-sleeve-10-1",
       "url": "/images/5-sleeve/10-949.jpeg",
-      "alt": "Vintage Drape 5-Sleeve Tee 10 View 1",
+      "alt": "Vintage Drape 5-Sleeve Tee",
       "sort_order": 1
     }
   ],
@@ -721,9 +721,9 @@ export const MOCK_PRODUCTS: Product[] = [
 },
 {
   "id": "prod-sleeve-11",
-  "name": "Heavy French Terry Tee 11",
+  "name": "Heavy French Terry Tee",
   "slug": "5-sleeve-tee-11",
-  "description": "Heavy French Terry Tee 11 crafted with high-density combed jersey cotton. Boxy drop-shoulder silhouette cut with everyday relaxed drape.",
+  "description": "Heavy French Terry Tee crafted with high-density combed jersey cotton. Boxy drop-shoulder silhouette cut with everyday relaxed drape.",
   "fabric": "100% Super Combed 260-280 GSM Cotton. Pre-shrunk & bio-washed.",
   "care": "Machine wash cold with like colors. Line dry in shade.",
   "category_id": "cat-5-sleeve",
@@ -745,7 +745,7 @@ export const MOCK_PRODUCTS: Product[] = [
     {
       "id": "img-sleeve-11-1",
       "url": "/images/5-sleeve/11-949.jpeg",
-      "alt": "Heavy French Terry Tee 11 View 1",
+      "alt": "Heavy French Terry Tee",
       "sort_order": 1
     }
   ],
@@ -788,9 +788,9 @@ export const MOCK_PRODUCTS: Product[] = [
 },
 {
   "id": "prod-sleeve-12",
-  "name": "Relaxed Studio 5-Sleeve Tee 12",
+  "name": "Relaxed Studio 5-Sleeve Tee",
   "slug": "5-sleeve-tee-12",
-  "description": "Relaxed Studio 5-Sleeve Tee 12 crafted with high-density combed jersey cotton. Boxy drop-shoulder silhouette cut with everyday relaxed drape.",
+  "description": "Relaxed Studio 5-Sleeve Tee crafted with high-density combed jersey cotton. Boxy drop-shoulder silhouette cut with everyday relaxed drape.",
   "fabric": "100% Super Combed 260-280 GSM Cotton. Pre-shrunk & bio-washed.",
   "care": "Machine wash cold with like colors. Line dry in shade.",
   "category_id": "cat-5-sleeve",
@@ -812,7 +812,7 @@ export const MOCK_PRODUCTS: Product[] = [
     {
       "id": "img-sleeve-12-1",
       "url": "/images/5-sleeve/12-899.jpeg",
-      "alt": "Relaxed Studio 5-Sleeve Tee 12 View 1",
+      "alt": "Relaxed Studio 5-Sleeve Tee",
       "sort_order": 1
     }
   ],
@@ -855,9 +855,9 @@ export const MOCK_PRODUCTS: Product[] = [
 },
 {
   "id": "prod-sleeve-13",
-  "name": "Chalk White 5-Sleeve Tee 13",
+  "name": "Chalk White 5-Sleeve Tee",
   "slug": "5-sleeve-tee-13",
-  "description": "Chalk White 5-Sleeve Tee 13 crafted with high-density combed jersey cotton. Boxy drop-shoulder silhouette cut with everyday relaxed drape.",
+  "description": "Chalk White 5-Sleeve Tee crafted with high-density combed jersey cotton. Boxy drop-shoulder silhouette cut with everyday relaxed drape.",
   "fabric": "100% Super Combed 260-280 GSM Cotton. Pre-shrunk & bio-washed.",
   "care": "Machine wash cold with like colors. Line dry in shade.",
   "category_id": "cat-5-sleeve",
@@ -879,7 +879,7 @@ export const MOCK_PRODUCTS: Product[] = [
     {
       "id": "img-sleeve-13-1",
       "url": "/images/5-sleeve/13-899.jpeg",
-      "alt": "Chalk White 5-Sleeve Tee 13 View 1",
+      "alt": "Chalk White 5-Sleeve Tee",
       "sort_order": 1
     }
   ],
@@ -922,9 +922,9 @@ export const MOCK_PRODUCTS: Product[] = [
 },
 {
   "id": "prod-sleeve-14",
-  "name": "Pitch Black 5-Sleeve Tee 14",
+  "name": "Pitch Black 5-Sleeve Tee",
   "slug": "5-sleeve-tee-14",
-  "description": "Pitch Black 5-Sleeve Tee 14 crafted with high-density combed jersey cotton. Boxy drop-shoulder silhouette cut with everyday relaxed drape.",
+  "description": "Pitch Black 5-Sleeve Tee crafted with high-density combed jersey cotton. Boxy drop-shoulder silhouette cut with everyday relaxed drape.",
   "fabric": "100% Super Combed 260-280 GSM Cotton. Pre-shrunk & bio-washed.",
   "care": "Machine wash cold with like colors. Line dry in shade.",
   "category_id": "cat-5-sleeve",
@@ -946,7 +946,7 @@ export const MOCK_PRODUCTS: Product[] = [
     {
       "id": "img-sleeve-14-1",
       "url": "/images/5-sleeve/14-899.jpeg",
-      "alt": "Pitch Black 5-Sleeve Tee 14 View 1",
+      "alt": "Pitch Black 5-Sleeve Tee",
       "sort_order": 1
     }
   ],
@@ -989,9 +989,9 @@ export const MOCK_PRODUCTS: Product[] = [
 },
 {
   "id": "prod-sleeve-15",
-  "name": "Ash Grey 5-Sleeve Tee 15",
+  "name": "Ash Grey 5-Sleeve Tee",
   "slug": "5-sleeve-tee-15",
-  "description": "Ash Grey 5-Sleeve Tee 15 crafted with high-density combed jersey cotton. Boxy drop-shoulder silhouette cut with everyday relaxed drape.",
+  "description": "Ash Grey 5-Sleeve Tee crafted with high-density combed jersey cotton. Boxy drop-shoulder silhouette cut with everyday relaxed drape.",
   "fabric": "100% Super Combed 260-280 GSM Cotton. Pre-shrunk & bio-washed.",
   "care": "Machine wash cold with like colors. Line dry in shade.",
   "category_id": "cat-5-sleeve",
@@ -1013,7 +1013,7 @@ export const MOCK_PRODUCTS: Product[] = [
     {
       "id": "img-sleeve-15-1",
       "url": "/images/5-sleeve/15-8999.jpeg",
-      "alt": "Ash Grey 5-Sleeve Tee 15 View 1",
+      "alt": "Ash Grey 5-Sleeve Tee",
       "sort_order": 1
     }
   ],
@@ -1056,9 +1056,9 @@ export const MOCK_PRODUCTS: Product[] = [
 },
 {
   "id": "prod-sleeve-16",
-  "name": "Crimson Red 5-Sleeve Tee 16",
+  "name": "Crimson Red 5-Sleeve Tee",
   "slug": "5-sleeve-tee-16",
-  "description": "Crimson Red 5-Sleeve Tee 16 crafted with high-density combed jersey cotton. Boxy drop-shoulder silhouette cut with everyday relaxed drape.",
+  "description": "Crimson Red 5-Sleeve Tee crafted with high-density combed jersey cotton. Boxy drop-shoulder silhouette cut with everyday relaxed drape.",
   "fabric": "100% Super Combed 260-280 GSM Cotton. Pre-shrunk & bio-washed.",
   "care": "Machine wash cold with like colors. Line dry in shade.",
   "category_id": "cat-5-sleeve",
@@ -1080,7 +1080,7 @@ export const MOCK_PRODUCTS: Product[] = [
     {
       "id": "img-sleeve-16-1",
       "url": "/images/5-sleeve/16-899.jpeg",
-      "alt": "Crimson Red 5-Sleeve Tee 16 View 1",
+      "alt": "Crimson Red 5-Sleeve Tee",
       "sort_order": 1
     }
   ],
@@ -1123,9 +1123,9 @@ export const MOCK_PRODUCTS: Product[] = [
 },
 {
   "id": "prod-sleeve-17",
-  "name": "Mocha Brown 5-Sleeve Tee 17",
+  "name": "Mocha Brown 5-Sleeve Tee",
   "slug": "5-sleeve-tee-17",
-  "description": "Mocha Brown 5-Sleeve Tee 17 crafted with high-density combed jersey cotton. Boxy drop-shoulder silhouette cut with everyday relaxed drape.",
+  "description": "Mocha Brown 5-Sleeve Tee crafted with high-density combed jersey cotton. Boxy drop-shoulder silhouette cut with everyday relaxed drape.",
   "fabric": "100% Super Combed 260-280 GSM Cotton. Pre-shrunk & bio-washed.",
   "care": "Machine wash cold with like colors. Line dry in shade.",
   "category_id": "cat-5-sleeve",
@@ -1147,7 +1147,7 @@ export const MOCK_PRODUCTS: Product[] = [
     {
       "id": "img-sleeve-17-1",
       "url": "/images/5-sleeve/17-899.jpeg",
-      "alt": "Mocha Brown 5-Sleeve Tee 17 View 1",
+      "alt": "Mocha Brown 5-Sleeve Tee",
       "sort_order": 1
     }
   ],
@@ -1190,9 +1190,9 @@ export const MOCK_PRODUCTS: Product[] = [
 },
 {
   "id": "prod-sleeve-18",
-  "name": "Dual Tone 5-Sleeve Tee 18",
+  "name": "Dual Tone 5-Sleeve Tee",
   "slug": "5-sleeve-tee-18",
-  "description": "Dual Tone 5-Sleeve Tee 18 crafted with high-density combed jersey cotton. Boxy drop-shoulder silhouette cut with everyday relaxed drape.",
+  "description": "Dual Tone 5-Sleeve Tee crafted with high-density combed jersey cotton. Boxy drop-shoulder silhouette cut with everyday relaxed drape.",
   "fabric": "100% Super Combed 260-280 GSM Cotton. Pre-shrunk & bio-washed.",
   "care": "Machine wash cold with like colors. Line dry in shade.",
   "category_id": "cat-5-sleeve",
@@ -1214,13 +1214,13 @@ export const MOCK_PRODUCTS: Product[] = [
     {
       "id": "img-sleeve-18-1",
       "url": "/images/5-sleeve/18.1-899.jpeg",
-      "alt": "Dual Tone 5-Sleeve Tee 18 View 1",
+      "alt": "Dual Tone 5-Sleeve Tee View 1",
       "sort_order": 1
     },
     {
       "id": "img-sleeve-18-2",
       "url": "/images/5-sleeve/18.2-899.jpeg",
-      "alt": "Dual Tone 5-Sleeve Tee 18 View 2",
+      "alt": "Dual Tone 5-Sleeve Tee View 2",
       "sort_order": 2
     }
   ],
@@ -1263,9 +1263,9 @@ export const MOCK_PRODUCTS: Product[] = [
 },
 {
   "id": "prod-sleeve-19",
-  "name": "Essential Washed Tee 19",
+  "name": "Essential Washed Tee",
   "slug": "5-sleeve-tee-19",
-  "description": "Essential Washed Tee 19 crafted with high-density combed jersey cotton. Boxy drop-shoulder silhouette cut with everyday relaxed drape.",
+  "description": "Essential Washed Tee crafted with high-density combed jersey cotton. Boxy drop-shoulder silhouette cut with everyday relaxed drape.",
   "fabric": "100% Super Combed 260-280 GSM Cotton. Pre-shrunk & bio-washed.",
   "care": "Machine wash cold with like colors. Line dry in shade.",
   "category_id": "cat-5-sleeve",
@@ -1287,13 +1287,13 @@ export const MOCK_PRODUCTS: Product[] = [
     {
       "id": "img-sleeve-19-1",
       "url": "/images/5-sleeve/19.1-899.jpeg",
-      "alt": "Essential Washed Tee 19 View 1",
+      "alt": "Essential Washed Tee View 1",
       "sort_order": 1
     },
     {
       "id": "img-sleeve-19-2",
       "url": "/images/5-sleeve/19.2.jpeg",
-      "alt": "Essential Washed Tee 19 View 2",
+      "alt": "Essential Washed Tee View 2",
       "sort_order": 2
     }
   ],
@@ -1336,9 +1336,9 @@ export const MOCK_PRODUCTS: Product[] = [
 },
 {
   "id": "prod-sleeve-20",
-  "name": "Architectural Drape Tee 20",
+  "name": "Architectural Drape Tee",
   "slug": "5-sleeve-tee-20",
-  "description": "Architectural Drape Tee 20 crafted with high-density combed jersey cotton. Boxy drop-shoulder silhouette cut with everyday relaxed drape.",
+  "description": "Architectural Drape Tee crafted with high-density combed jersey cotton. Boxy drop-shoulder silhouette cut with everyday relaxed drape.",
   "fabric": "100% Super Combed 260-280 GSM Cotton. Pre-shrunk & bio-washed.",
   "care": "Machine wash cold with like colors. Line dry in shade.",
   "category_id": "cat-5-sleeve",
@@ -1360,13 +1360,13 @@ export const MOCK_PRODUCTS: Product[] = [
     {
       "id": "img-sleeve-20-1",
       "url": "/images/5-sleeve/20.1-899.jpeg",
-      "alt": "Architectural Drape Tee 20 View 1",
+      "alt": "Architectural Drape Tee View 1",
       "sort_order": 1
     },
     {
       "id": "img-sleeve-20-2",
       "url": "/images/5-sleeve/20.2.jpeg",
-      "alt": "Architectural Drape Tee 20 View 2",
+      "alt": "Architectural Drape Tee View 2",
       "sort_order": 2
     }
   ],
@@ -1409,9 +1409,9 @@ export const MOCK_PRODUCTS: Product[] = [
 },
 {
   "id": "prod-sleeve-21",
-  "name": "Cyber Core 5-Sleeve Tee 21",
+  "name": "Cyber Core 5-Sleeve Tee",
   "slug": "5-sleeve-tee-21",
-  "description": "Cyber Core 5-Sleeve Tee 21 crafted with high-density combed jersey cotton. Boxy drop-shoulder silhouette cut with everyday relaxed drape.",
+  "description": "Cyber Core 5-Sleeve Tee crafted with high-density combed jersey cotton. Boxy drop-shoulder silhouette cut with everyday relaxed drape.",
   "fabric": "100% Super Combed 260-280 GSM Cotton. Pre-shrunk & bio-washed.",
   "care": "Machine wash cold with like colors. Line dry in shade.",
   "category_id": "cat-5-sleeve",
@@ -1433,7 +1433,7 @@ export const MOCK_PRODUCTS: Product[] = [
     {
       "id": "img-sleeve-21-1",
       "url": "/images/5-sleeve/21-899.jpeg",
-      "alt": "Cyber Core 5-Sleeve Tee 21 View 1",
+      "alt": "Cyber Core 5-Sleeve Tee",
       "sort_order": 1
     }
   ],
@@ -1476,9 +1476,9 @@ export const MOCK_PRODUCTS: Product[] = [
 },
 {
   "id": "prod-sleeve-22",
-  "name": "Washed Olive 5-Sleeve Tee 22",
+  "name": "Washed Olive 5-Sleeve Tee",
   "slug": "5-sleeve-tee-22",
-  "description": "Washed Olive 5-Sleeve Tee 22 crafted with high-density combed jersey cotton. Boxy drop-shoulder silhouette cut with everyday relaxed drape.",
+  "description": "Washed Olive 5-Sleeve Tee crafted with high-density combed jersey cotton. Boxy drop-shoulder silhouette cut with everyday relaxed drape.",
   "fabric": "100% Super Combed 260-280 GSM Cotton. Pre-shrunk & bio-washed.",
   "care": "Machine wash cold with like colors. Line dry in shade.",
   "category_id": "cat-5-sleeve",
@@ -1500,7 +1500,7 @@ export const MOCK_PRODUCTS: Product[] = [
     {
       "id": "img-sleeve-22-1",
       "url": "/images/5-sleeve/22-899.jpeg",
-      "alt": "Washed Olive 5-Sleeve Tee 22 View 1",
+      "alt": "Washed Olive 5-Sleeve Tee",
       "sort_order": 1
     }
   ],
@@ -1543,9 +1543,9 @@ export const MOCK_PRODUCTS: Product[] = [
 },
 {
   "id": "prod-sleeve-23",
-  "name": "Desert Sand 5-Sleeve Tee 23",
+  "name": "Desert Sand 5-Sleeve Tee",
   "slug": "5-sleeve-tee-23",
-  "description": "Desert Sand 5-Sleeve Tee 23 crafted with high-density combed jersey cotton. Boxy drop-shoulder silhouette cut with everyday relaxed drape.",
+  "description": "Desert Sand 5-Sleeve Tee crafted with high-density combed jersey cotton. Boxy drop-shoulder silhouette cut with everyday relaxed drape.",
   "fabric": "100% Super Combed 260-280 GSM Cotton. Pre-shrunk & bio-washed.",
   "care": "Machine wash cold with like colors. Line dry in shade.",
   "category_id": "cat-5-sleeve",
@@ -1567,7 +1567,7 @@ export const MOCK_PRODUCTS: Product[] = [
     {
       "id": "img-sleeve-23-1",
       "url": "/images/5-sleeve/23-899.jpeg",
-      "alt": "Desert Sand 5-Sleeve Tee 23 View 1",
+      "alt": "Desert Sand 5-Sleeve Tee",
       "sort_order": 1
     }
   ],
@@ -1610,9 +1610,9 @@ export const MOCK_PRODUCTS: Product[] = [
 },
 {
   "id": "prod-hoodie-01",
-  "name": "Stylish Heavyweight Hoodie 01",
+  "name": "Stylish Heavyweight Hoodie",
   "slug": "heavyweight-hoodie-01",
-  "description": "Stylish Heavyweight Hoodie 01 cut from custom 400 GSM brushed fleece. Double-layered structured hood with dropped shoulders and ribbed hem.",
+  "description": "Stylish Heavyweight Hoodie cut from custom 400 GSM brushed fleece. Double-layered structured hood with dropped shoulders and ribbed hem.",
   "fabric": "400 GSM 100% Combed Heavyweight Fleece Cotton.",
   "care": "Cold gentle wash. Lay flat to dry.",
   "category_id": "cat-hoodies",
@@ -1634,7 +1634,7 @@ export const MOCK_PRODUCTS: Product[] = [
     {
       "id": "img-hoodie-01-1",
       "url": "/images/Hoodies/1-1199.jpeg",
-      "alt": "Stylish Heavyweight Hoodie 01",
+      "alt": "Stylish Heavyweight Hoodie",
       "sort_order": 1
     }
   ],
@@ -1677,9 +1677,9 @@ export const MOCK_PRODUCTS: Product[] = [
 },
 {
   "id": "prod-hoodie-02",
-  "name": "Drop-Shoulder Boxy Hoodie 02",
+  "name": "Drop-Shoulder Boxy Hoodie",
   "slug": "heavyweight-hoodie-02",
-  "description": "Drop-Shoulder Boxy Hoodie 02 cut from custom 400 GSM brushed fleece. Double-layered structured hood with dropped shoulders and ribbed hem.",
+  "description": "Drop-Shoulder Boxy Hoodie cut from custom 400 GSM brushed fleece. Double-layered structured hood with dropped shoulders and ribbed hem.",
   "fabric": "400 GSM 100% Combed Heavyweight Fleece Cotton.",
   "care": "Cold gentle wash. Lay flat to dry.",
   "category_id": "cat-hoodies",
@@ -1701,7 +1701,7 @@ export const MOCK_PRODUCTS: Product[] = [
     {
       "id": "img-hoodie-02-1",
       "url": "/images/Hoodies/2-1199.jpeg",
-      "alt": "Drop-Shoulder Boxy Hoodie 02",
+      "alt": "Drop-Shoulder Boxy Hoodie",
       "sort_order": 1
     }
   ],
@@ -1744,9 +1744,9 @@ export const MOCK_PRODUCTS: Product[] = [
 },
 {
   "id": "prod-hoodie-03",
-  "name": "Vintage Washed Hoodie 03",
+  "name": "Vintage Washed Hoodie",
   "slug": "heavyweight-hoodie-03",
-  "description": "Vintage Washed Hoodie 03 cut from custom 400 GSM brushed fleece. Double-layered structured hood with dropped shoulders and ribbed hem.",
+  "description": "Vintage Washed Hoodie cut from custom 400 GSM brushed fleece. Double-layered structured hood with dropped shoulders and ribbed hem.",
   "fabric": "400 GSM 100% Combed Heavyweight Fleece Cotton.",
   "care": "Cold gentle wash. Lay flat to dry.",
   "category_id": "cat-hoodies",
@@ -1768,7 +1768,7 @@ export const MOCK_PRODUCTS: Product[] = [
     {
       "id": "img-hoodie-03-1",
       "url": "/images/Hoodies/3-1199.jpeg",
-      "alt": "Vintage Washed Hoodie 03",
+      "alt": "Vintage Washed Hoodie",
       "sort_order": 1
     }
   ],
@@ -1811,9 +1811,9 @@ export const MOCK_PRODUCTS: Product[] = [
 },
 {
   "id": "prod-hoodie-04",
-  "name": "Minimalist Oversized Hoodie 04",
+  "name": "Minimalist Oversized Hoodie",
   "slug": "heavyweight-hoodie-04",
-  "description": "Minimalist Oversized Hoodie 04 cut from custom 400 GSM brushed fleece. Double-layered structured hood with dropped shoulders and ribbed hem.",
+  "description": "Minimalist Oversized Hoodie cut from custom 400 GSM brushed fleece. Double-layered structured hood with dropped shoulders and ribbed hem.",
   "fabric": "400 GSM 100% Combed Heavyweight Fleece Cotton.",
   "care": "Cold gentle wash. Lay flat to dry.",
   "category_id": "cat-hoodies",
@@ -1835,7 +1835,7 @@ export const MOCK_PRODUCTS: Product[] = [
     {
       "id": "img-hoodie-04-1",
       "url": "/images/Hoodies/4-1199.jpeg",
-      "alt": "Minimalist Oversized Hoodie 04",
+      "alt": "Minimalist Oversized Hoodie",
       "sort_order": 1
     }
   ],
@@ -1878,9 +1878,9 @@ export const MOCK_PRODUCTS: Product[] = [
 },
 {
   "id": "prod-hoodie-05",
-  "name": "Street Boxy Fleece Hoodie 05",
+  "name": "Street Boxy Fleece Hoodie",
   "slug": "heavyweight-hoodie-05",
-  "description": "Street Boxy Fleece Hoodie 05 cut from custom 400 GSM brushed fleece. Double-layered structured hood with dropped shoulders and ribbed hem.",
+  "description": "Street Boxy Fleece Hoodie cut from custom 400 GSM brushed fleece. Double-layered structured hood with dropped shoulders and ribbed hem.",
   "fabric": "400 GSM 100% Combed Heavyweight Fleece Cotton.",
   "care": "Cold gentle wash. Lay flat to dry.",
   "category_id": "cat-hoodies",
@@ -1902,7 +1902,7 @@ export const MOCK_PRODUCTS: Product[] = [
     {
       "id": "img-hoodie-05-1",
       "url": "/images/Hoodies/5-1199.jpeg",
-      "alt": "Street Boxy Fleece Hoodie 05",
+      "alt": "Street Boxy Fleece Hoodie",
       "sort_order": 1
     }
   ],
@@ -1945,9 +1945,9 @@ export const MOCK_PRODUCTS: Product[] = [
 },
 {
   "id": "prod-hoodie-06",
-  "name": "Raw Edge French Terry Hoodie 06",
+  "name": "Raw Edge French Terry Hoodie",
   "slug": "heavyweight-hoodie-06",
-  "description": "Raw Edge French Terry Hoodie 06 cut from custom 400 GSM brushed fleece. Double-layered structured hood with dropped shoulders and ribbed hem.",
+  "description": "Raw Edge French Terry Hoodie cut from custom 400 GSM brushed fleece. Double-layered structured hood with dropped shoulders and ribbed hem.",
   "fabric": "400 GSM 100% Combed Heavyweight Fleece Cotton.",
   "care": "Cold gentle wash. Lay flat to dry.",
   "category_id": "cat-hoodies",
@@ -1969,7 +1969,7 @@ export const MOCK_PRODUCTS: Product[] = [
     {
       "id": "img-hoodie-06-1",
       "url": "/images/Hoodies/6-1199.jpeg",
-      "alt": "Raw Edge French Terry Hoodie 06",
+      "alt": "Raw Edge French Terry Hoodie",
       "sort_order": 1
     }
   ],
@@ -2012,9 +2012,9 @@ export const MOCK_PRODUCTS: Product[] = [
 },
 {
   "id": "prod-hoodie-07",
-  "name": "Architectural Drape Hoodie 07",
+  "name": "Architectural Drape Hoodie",
   "slug": "heavyweight-hoodie-07",
-  "description": "Architectural Drape Hoodie 07 cut from custom 400 GSM brushed fleece. Double-layered structured hood with dropped shoulders and ribbed hem.",
+  "description": "Architectural Drape Hoodie cut from custom 400 GSM brushed fleece. Double-layered structured hood with dropped shoulders and ribbed hem.",
   "fabric": "400 GSM 100% Combed Heavyweight Fleece Cotton.",
   "care": "Cold gentle wash. Lay flat to dry.",
   "category_id": "cat-hoodies",
@@ -2036,7 +2036,7 @@ export const MOCK_PRODUCTS: Product[] = [
     {
       "id": "img-hoodie-07-1",
       "url": "/images/Hoodies/7-1199.jpeg",
-      "alt": "Architectural Drape Hoodie 07",
+      "alt": "Architectural Drape Hoodie",
       "sort_order": 1
     }
   ],
@@ -2079,9 +2079,9 @@ export const MOCK_PRODUCTS: Product[] = [
 },
 {
   "id": "prod-hoodie-08",
-  "name": "Acid Stonewash Hoodie 08",
+  "name": "Acid Stonewash Hoodie",
   "slug": "heavyweight-hoodie-08",
-  "description": "Acid Stonewash Hoodie 08 cut from custom 400 GSM brushed fleece. Double-layered structured hood with dropped shoulders and ribbed hem.",
+  "description": "Acid Stonewash Hoodie cut from custom 400 GSM brushed fleece. Double-layered structured hood with dropped shoulders and ribbed hem.",
   "fabric": "400 GSM 100% Combed Heavyweight Fleece Cotton.",
   "care": "Cold gentle wash. Lay flat to dry.",
   "category_id": "cat-hoodies",
@@ -2103,7 +2103,7 @@ export const MOCK_PRODUCTS: Product[] = [
     {
       "id": "img-hoodie-08-1",
       "url": "/images/Hoodies/8-1199.jpeg",
-      "alt": "Acid Stonewash Hoodie 08",
+      "alt": "Acid Stonewash Hoodie",
       "sort_order": 1
     }
   ],
@@ -2146,9 +2146,9 @@ export const MOCK_PRODUCTS: Product[] = [
 },
 {
   "id": "prod-hoodie-10",
-  "name": "Stealth Charcoal Hoodie 10",
+  "name": "Stealth Charcoal Hoodie",
   "slug": "heavyweight-hoodie-10",
-  "description": "Stealth Charcoal Hoodie 10 cut from custom 400 GSM brushed fleece. Double-layered structured hood with dropped shoulders and ribbed hem.",
+  "description": "Stealth Charcoal Hoodie cut from custom 400 GSM brushed fleece. Double-layered structured hood with dropped shoulders and ribbed hem.",
   "fabric": "400 GSM 100% Combed Heavyweight Fleece Cotton.",
   "care": "Cold gentle wash. Lay flat to dry.",
   "category_id": "cat-hoodies",
@@ -2170,7 +2170,7 @@ export const MOCK_PRODUCTS: Product[] = [
     {
       "id": "img-hoodie-10-1",
       "url": "/images/Hoodies/10-1199.jpeg",
-      "alt": "Stealth Charcoal Hoodie 10",
+      "alt": "Stealth Charcoal Hoodie",
       "sort_order": 1
     }
   ],
@@ -2213,9 +2213,9 @@ export const MOCK_PRODUCTS: Product[] = [
 },
 {
   "id": "prod-pant-01",
-  "name": "Tactical Multi-Pocket Cargo 01",
+  "name": "Tactical Multi-Pocket Cargo",
   "slug": "tactical-pants-01",
-  "description": "Tactical Multi-Pocket Cargo 01 designed with volume darts, multi-functional pockets and relaxed wide puddle hem for street aesthetics.",
+  "description": "Tactical Multi-Pocket Cargo designed with volume darts, multi-functional pockets and relaxed wide puddle hem for street aesthetics.",
   "fabric": "High-density Cotton Twill with reinforced ripstop knee panels.",
   "care": "Machine wash cold. Hang to dry.",
   "category_id": "cat-pants",
@@ -2237,7 +2237,7 @@ export const MOCK_PRODUCTS: Product[] = [
     {
       "id": "img-pant-01-1",
       "url": "/images/pants/1-1149.jpeg",
-      "alt": "Tactical Multi-Pocket Cargo 01",
+      "alt": "Tactical Multi-Pocket Cargo",
       "sort_order": 1
     }
   ],
@@ -2280,9 +2280,9 @@ export const MOCK_PRODUCTS: Product[] = [
 },
 {
   "id": "prod-pant-02",
-  "name": "Relaxed Parachute Cargo 02",
+  "name": "Relaxed Parachute Cargo",
   "slug": "tactical-pants-02",
-  "description": "Relaxed Parachute Cargo 02 designed with volume darts, multi-functional pockets and relaxed wide puddle hem for street aesthetics.",
+  "description": "Relaxed Parachute Cargo designed with volume darts, multi-functional pockets and relaxed wide puddle hem for street aesthetics.",
   "fabric": "High-density Cotton Twill with reinforced ripstop knee panels.",
   "care": "Machine wash cold. Hang to dry.",
   "category_id": "cat-pants",
@@ -2304,7 +2304,7 @@ export const MOCK_PRODUCTS: Product[] = [
     {
       "id": "img-pant-02-1",
       "url": "/images/pants/2-11499.jpeg",
-      "alt": "Relaxed Parachute Cargo 02",
+      "alt": "Relaxed Parachute Cargo",
       "sort_order": 1
     }
   ],
@@ -2347,9 +2347,9 @@ export const MOCK_PRODUCTS: Product[] = [
 },
 {
   "id": "prod-pant-03",
-  "name": "Wide-Leg Utility Cargo 03",
+  "name": "Wide-Leg Utility Cargo",
   "slug": "tactical-pants-03",
-  "description": "Wide-Leg Utility Cargo 03 designed with volume darts, multi-functional pockets and relaxed wide puddle hem for street aesthetics.",
+  "description": "Wide-Leg Utility Cargo designed with volume darts, multi-functional pockets and relaxed wide puddle hem for street aesthetics.",
   "fabric": "High-density Cotton Twill with reinforced ripstop knee panels.",
   "care": "Machine wash cold. Hang to dry.",
   "category_id": "cat-pants",
@@ -2371,7 +2371,7 @@ export const MOCK_PRODUCTS: Product[] = [
     {
       "id": "img-pant-03-1",
       "url": "/images/pants/3-1149.jpeg",
-      "alt": "Wide-Leg Utility Cargo 03",
+      "alt": "Wide-Leg Utility Cargo",
       "sort_order": 1
     }
   ],
@@ -2414,9 +2414,9 @@ export const MOCK_PRODUCTS: Product[] = [
 },
 {
   "id": "prod-pant-04",
-  "name": "Baggy Street Cargo Pant 04",
+  "name": "Baggy Street Cargo Pant",
   "slug": "tactical-pants-04",
-  "description": "Baggy Street Cargo Pant 04 designed with volume darts, multi-functional pockets and relaxed wide puddle hem for street aesthetics.",
+  "description": "Baggy Street Cargo Pant designed with volume darts, multi-functional pockets and relaxed wide puddle hem for street aesthetics.",
   "fabric": "High-density Cotton Twill with reinforced ripstop knee panels.",
   "care": "Machine wash cold. Hang to dry.",
   "category_id": "cat-pants",
@@ -2438,7 +2438,7 @@ export const MOCK_PRODUCTS: Product[] = [
     {
       "id": "img-pant-04-1",
       "url": "/images/pants/4-1149.jpeg",
-      "alt": "Baggy Street Cargo Pant 04",
+      "alt": "Baggy Street Cargo Pant",
       "sort_order": 1
     }
   ],
@@ -2481,9 +2481,9 @@ export const MOCK_PRODUCTS: Product[] = [
 },
 {
   "id": "prod-pant-05",
-  "name": "Drawstring Utility Pant 05",
+  "name": "Drawstring Utility Pant",
   "slug": "tactical-pants-05",
-  "description": "Drawstring Utility Pant 05 designed with volume darts, multi-functional pockets and relaxed wide puddle hem for street aesthetics.",
+  "description": "Drawstring Utility Pant designed with volume darts, multi-functional pockets and relaxed wide puddle hem for street aesthetics.",
   "fabric": "High-density Cotton Twill with reinforced ripstop knee panels.",
   "care": "Machine wash cold. Hang to dry.",
   "category_id": "cat-pants",
@@ -2505,7 +2505,7 @@ export const MOCK_PRODUCTS: Product[] = [
     {
       "id": "img-pant-05-1",
       "url": "/images/pants/5-1149.jpeg",
-      "alt": "Drawstring Utility Pant 05",
+      "alt": "Drawstring Utility Pant",
       "sort_order": 1
     }
   ],
@@ -2548,9 +2548,9 @@ export const MOCK_PRODUCTS: Product[] = [
 },
 {
   "id": "prod-pant-06",
-  "name": "Straight Cut Tactical Pant 06",
+  "name": "Straight Cut Tactical Pant",
   "slug": "tactical-pants-06",
-  "description": "Straight Cut Tactical Pant 06 designed with volume darts, multi-functional pockets and relaxed wide puddle hem for street aesthetics.",
+  "description": "Straight Cut Tactical Pant designed with volume darts, multi-functional pockets and relaxed wide puddle hem for street aesthetics.",
   "fabric": "High-density Cotton Twill with reinforced ripstop knee panels.",
   "care": "Machine wash cold. Hang to dry.",
   "category_id": "cat-pants",
@@ -2572,7 +2572,7 @@ export const MOCK_PRODUCTS: Product[] = [
     {
       "id": "img-pant-06-1",
       "url": "/images/pants/6-1149.jpeg",
-      "alt": "Straight Cut Tactical Pant 06",
+      "alt": "Straight Cut Tactical Pant",
       "sort_order": 1
     }
   ],
@@ -2615,9 +2615,9 @@ export const MOCK_PRODUCTS: Product[] = [
 },
 {
   "id": "prod-shirt-01",
-  "name": "Textured Camp Collar Shirt 01",
+  "name": "Textured Camp Collar Shirt",
   "slug": "resort-shirt-01",
-  "description": "Textured Camp Collar Shirt 01 featuring camp collar, relaxed resort drape, and open weave texture suited for all-day breathability.",
+  "description": "Textured Camp Collar Shirt featuring camp collar, relaxed resort drape, and open weave texture suited for all-day breathability.",
   "fabric": "Pure Flax Linen & Combed Cotton Blend.",
   "care": "Hand wash cold or gentle machine wash.",
   "category_id": "cat-shirts",
@@ -2639,7 +2639,7 @@ export const MOCK_PRODUCTS: Product[] = [
     {
       "id": "img-shirt-01-1",
       "url": "/images/shirts/1-1199.jpeg",
-      "alt": "Textured Camp Collar Shirt 01",
+      "alt": "Textured Camp Collar Shirt",
       "sort_order": 1
     }
   ],
@@ -2674,9 +2674,9 @@ export const MOCK_PRODUCTS: Product[] = [
 },
 {
   "id": "prod-shirt-02",
-  "name": "Relaxed Boxy Resort Shirt 02",
+  "name": "Relaxed Boxy Resort Shirt",
   "slug": "resort-shirt-02",
-  "description": "Relaxed Boxy Resort Shirt 02 featuring camp collar, relaxed resort drape, and open weave texture suited for all-day breathability.",
+  "description": "Relaxed Boxy Resort Shirt featuring camp collar, relaxed resort drape, and open weave texture suited for all-day breathability.",
   "fabric": "Pure Flax Linen & Combed Cotton Blend.",
   "care": "Hand wash cold or gentle machine wash.",
   "category_id": "cat-shirts",
@@ -2698,7 +2698,7 @@ export const MOCK_PRODUCTS: Product[] = [
     {
       "id": "img-shirt-02-1",
       "url": "/images/shirts/2-1199.jpeg",
-      "alt": "Relaxed Boxy Resort Shirt 02",
+      "alt": "Relaxed Boxy Resort Shirt",
       "sort_order": 1
     }
   ],
@@ -2733,9 +2733,9 @@ export const MOCK_PRODUCTS: Product[] = [
 },
 {
   "id": "prod-shirt-03",
-  "name": "Open Weave Linen Shirt 03",
+  "name": "Open Weave Linen Shirt",
   "slug": "resort-shirt-03",
-  "description": "Open Weave Linen Shirt 03 featuring camp collar, relaxed resort drape, and open weave texture suited for all-day breathability.",
+  "description": "Open Weave Linen Shirt featuring camp collar, relaxed resort drape, and open weave texture suited for all-day breathability.",
   "fabric": "Pure Flax Linen & Combed Cotton Blend.",
   "care": "Hand wash cold or gentle machine wash.",
   "category_id": "cat-shirts",
@@ -2757,7 +2757,7 @@ export const MOCK_PRODUCTS: Product[] = [
     {
       "id": "img-shirt-03-1",
       "url": "/images/shirts/3-1199.jpeg",
-      "alt": "Open Weave Linen Shirt 03",
+      "alt": "Open Weave Linen Shirt",
       "sort_order": 1
     }
   ],
