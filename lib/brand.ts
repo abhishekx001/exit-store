@@ -20,7 +20,7 @@ export const BRAND = {
   // Contact & Socials
   instagramHandle: "@exitstore.in",
   instagramUrl: "https://instagram.com/exitstore.in",
-  whatsappNumber: "+919876543210",
+  whatsappNumber: "+919633545172",
   whatsappPrefillMessage: "Hello exit store, I want to inquire about",
   supportEmail: "support@exitstore.in",
   
@@ -57,6 +57,6 @@ export const BRAND = {
     { title: "Shirts & Camp Collars", href: "/category/shirts" },
     { title: "Co-ord Sets", href: "/category/co-ord-sets" },
     { title: "Trousers & Bottoms", href: "/category/trousers" },
-    { title: "WhatsApp Order Concierge", href: "https://wa.me/919876543210", external: true },
+    { title: "WhatsApp Order Concierge", href: "https://wa.me/919633545172", external: true },
   ]
 };
