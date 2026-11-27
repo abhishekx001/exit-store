@@ -25,11 +25,29 @@ export function safeVibrate(pattern: number | number[] = 6): void {
   }
 }
 
-export function buildWhatsAppLink(productName?: string, size?: string, url?: string): string {
-  const base = `https://wa.me/${BRAND.whatsappNumber.replace(/[^0-9]/g, "")}`;
+export function buildWhatsAppLink(productName?: string, size?: string, price?: number, url?: string): string {
+  const number = BRAND.whatsappNumber.replace(/[^0-9]/g, "");
+  const base = `https://wa.me/${number}`;
   const text = productName
-    ? `Hello ${BRAND.name}, I would like to order: *${productName}*${size ? ` (Size: ${size})` : ""}.\nLink: ${url || (typeof window !== 'undefined' ? window.location.href : '')}`
-    : `Hello ${BRAND.name}, I have an inquiry regarding your collection.`;
+    ? `Hello ${BRAND.name}, I would like to book:\n\n*${productName}*\n${price ? `• Price: ₹${price.toLocaleString("en-IN")}\n` : ""}${size ? `• Size: ${size}\n` : ""}${url ? `• Link: ${url}\n` : (typeof window !== 'undefined' ? `• Link: ${window.location.href}\n` : "")}\nPlease confirm availability and booking details!`
+    : `Hello ${BRAND.name}, I would like to book an item from your collection.`;
+  return `${base}?text=${encodeURIComponent(text)}`;
+}
+
+export function buildWhatsAppCartLink(
+  items: Array<{ product: { name: string; price: number; slug?: string }; variant?: { size: string }; quantity: number }>,
+  total: number
+): string {
+  const number = BRAND.whatsappNumber.replace(/[^0-9]/g, "");
+  const base = `https://wa.me/${number}`;
+  const itemsList = items
+    .map(
+      (item, idx) =>
+        `${idx + 1}. *${item.product.name}* (Size: ${item.variant?.size || "Free Size"}, Qty: ${item.quantity}) — ₹${(item.product.price * item.quantity).toLocaleString("en-IN")}`
+    )
+    .join("\n");
+
+  const text = `Hello ${BRAND.name}, I would like to book the following items from my bag:\n\n${itemsList}\n\n*Total Amount: ₹${total.toLocaleString("en-IN")}*\n\nPlease confirm availability and dispatch details!`;
   return `${base}?text=${encodeURIComponent(text)}`;
 }
 

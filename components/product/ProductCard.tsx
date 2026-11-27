@@ -4,10 +4,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { Product } from "@/types";
-import { formatPrice } from "@/lib/utils";
+import { formatPrice, buildWhatsAppLink } from "@/lib/utils";
 import { useFavouritesStore } from "@/store/useFavouritesStore";
 import { useCartStore } from "@/store/useCartStore";
-import { Heart, Plus } from "lucide-react";
+import { Heart, Plus, MessageCircle } from "lucide-react";
 import { toast } from "sonner";
 
 interface ProductCardProps {
@@ -102,15 +102,18 @@ export function ProductCard({
           />
         </button>
 
-        {/* Quick Add Button (Stitch design) */}
+        {/* Book on WhatsApp Quick Button */}
         <div className="absolute bottom-2 inset-x-2 flex justify-center z-10 opacity-90 sm:opacity-0 sm:group-hover:opacity-100 transition-opacity">
-          <button
-            onClick={handleQuickAdd}
-            className="w-full h-8 bg-white/95 backdrop-blur-sm hover:bg-ink hover:text-white text-ink font-mono text-[11px] uppercase font-bold rounded shadow-sm flex items-center justify-center gap-1 active:scale-95 transition-all"
+          <a
+            href={buildWhatsAppLink(product.name, undefined, product.price)}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={(e) => e.stopPropagation()}
+            className="w-full h-8 bg-white/95 backdrop-blur-sm hover:bg-[#25D366] hover:text-white text-ink font-mono text-[11px] uppercase font-bold rounded shadow-sm flex items-center justify-center gap-1.5 active:scale-95 transition-all border border-hair"
           >
-            <Plus className="w-3.5 h-3.5" />
-            <span>Quick Add</span>
-          </button>
+            <MessageCircle className="w-3.5 h-3.5 text-[#25D366] group-hover:text-white" />
+            <span>Book on WhatsApp</span>
+          </a>
         </div>
       </div>
 

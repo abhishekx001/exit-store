@@ -6,8 +6,8 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useCartStore } from "@/store/useCartStore";
 import { useUIStore } from "@/store/useUIStore";
-import { formatPrice } from "@/lib/utils";
-import { X, Trash2, ArrowRight, ShoppingBag } from "lucide-react";
+import { formatPrice, buildWhatsAppCartLink } from "@/lib/utils";
+import { X, Trash2, ArrowRight, ShoppingBag, MessageCircle } from "lucide-react";
 
 export function CartDrawer() {
   const router = useRouter();
@@ -203,13 +203,16 @@ export function CartDrawer() {
                   </div>
                 </div>
 
-                <button
-                  onClick={handleCheckout}
-                  className="w-full bg-ink hover:bg-ink/90 active:scale-98 text-white py-3.5 rounded-[4px] text-xs font-mono font-bold uppercase tracking-wider flex items-center justify-center gap-2 transition-transform"
+                <a
+                  href={buildWhatsAppCartLink(items, total)}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={closeCart}
+                  className="w-full bg-[#25D366] hover:bg-[#20ba5a] active:scale-98 text-white py-3.5 rounded-[4px] text-xs font-mono font-bold uppercase tracking-wider flex items-center justify-center gap-2 shadow-md transition-all cursor-pointer"
                 >
-                  <span>Checkout Now</span>
-                  <ArrowRight className="w-3.5 h-3.5 text-red" />
-                </button>
+                  <MessageCircle className="w-4 h-4 fill-white text-white" />
+                  <span>BOOK ON WHATSAPP ({formatPrice(total)})</span>
+                </a>
               </div>
             )}
           </motion.div>

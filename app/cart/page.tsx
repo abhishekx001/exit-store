@@ -4,8 +4,8 @@ import Link from "next/link";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { useCartStore } from "@/store/useCartStore";
-import { formatPrice } from "@/lib/utils";
-import { ArrowRight, Trash2, ShoppingBag } from "lucide-react";
+import { formatPrice, buildWhatsAppCartLink } from "@/lib/utils";
+import { ArrowRight, Trash2, ShoppingBag, MessageCircle } from "lucide-react";
 
 export default function CartPage() {
   const router = useRouter();
@@ -181,13 +181,15 @@ export default function CartPage() {
                 </div>
               </div>
 
-              <button
-                onClick={() => router.push("/checkout")}
-                className="w-full bg-ink hover:bg-ink/90 text-white py-3.5 rounded-[4px] text-xs font-mono font-bold uppercase tracking-wider transition-colors flex items-center justify-center gap-2"
+              <a
+                href={buildWhatsAppCartLink(items, total)}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full bg-[#25D366] hover:bg-[#20ba5a] text-white py-3.5 rounded-[4px] text-xs font-mono font-bold uppercase tracking-wider transition-all flex items-center justify-center gap-2 shadow-md cursor-pointer"
               >
-                <span>Proceed to Checkout</span>
-                <ArrowRight className="w-3.5 h-3.5 text-red" />
-              </button>
+                <MessageCircle className="w-4 h-4 fill-white text-white" />
+                <span>BOOK ORDER ON WHATSAPP ({formatPrice(total)})</span>
+              </a>
 
               <div className="text-[11px] font-mono text-muted text-center space-y-1">
                 <p>✓ Cash on Delivery available at checkout</p>

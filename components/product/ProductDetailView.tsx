@@ -246,26 +246,35 @@ export function ProductDetailView({ product, relatedProducts }: ProductDetailVie
             {/* Hairline Divider */}
             <div className="w-full h-px bg-hair" />
 
-            {/* Desktop Add to Bag & Wishlist Row */}
-            <div className="hidden sm:flex items-center gap-3 px-4 sm:px-0 py-4">
-              <button
-                onClick={() => toggleFavourite(product)}
-                className="flex items-center justify-center gap-2 h-12 px-6 rounded-lg bg-paper text-ink font-mono font-bold text-xs uppercase hover:bg-tile transition-colors border border-hair"
-              >
-                <Heart
-                  className={`w-4 h-4 ${favorited ? "fill-red text-red" : "text-ink"}`}
-                />
-                <span>{favorited ? "Saved" : "Wishlist"}</span>
-              </button>
+            {/* Desktop WhatsApp Booking & Wishlist Row */}
+            <div className="hidden sm:flex flex-col gap-3 px-4 sm:px-0 py-4">
+              <div className="flex items-center gap-3">
+                <button
+                  onClick={() => toggleFavourite(product)}
+                  className="flex items-center justify-center gap-2 h-12 px-5 rounded-lg bg-paper text-ink font-mono font-bold text-xs uppercase hover:bg-tile transition-colors border border-hair"
+                >
+                  <Heart
+                    className={`w-4 h-4 ${favorited ? "fill-red text-red" : "text-ink"}`}
+                  />
+                  <span>{favorited ? "Saved" : "Wishlist"}</span>
+                </button>
 
-              <button
-                onClick={handleAddToCart}
-                className={`flex-1 h-12 rounded-lg font-mono font-bold text-xs uppercase active:scale-95 transition-all text-white ${
-                  addedAnimation ? "bg-red" : "bg-ink hover:bg-ink/90"
-                }`}
-              >
-                {addedAnimation ? "ADDED TO BAG ✓" : "ADD TO BAG"}
-              </button>
+                <a
+                  href={buildWhatsAppLink(product.name, selectedSize, product.price)}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-1 h-12 rounded-lg font-mono font-bold text-xs uppercase flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#20ba5a] text-white shadow-md active:scale-95 transition-all cursor-pointer"
+                >
+                  <MessageCircle className="w-5 h-5 fill-white text-white" />
+                  <span>BOOK ON WHATSAPP ({formatPrice(product.price)})</span>
+                </a>
+              </div>
+
+              <div className="flex items-center justify-between text-[11px] font-mono text-muted px-1">
+                <span>✓ Direct WhatsApp Booking</span>
+                <span>✓ Size &amp; Stock Check</span>
+                <span>✓ Free COD / UPI</span>
+              </div>
             </div>
 
             {/* Collapsible Accordions (Exact Stitch spec) */}
@@ -382,29 +391,29 @@ export function ProductDetailView({ product, relatedProducts }: ProductDetailVie
         )}
       </div>
 
-      {/* Sticky Bottom Action Bar for Mobile (Exact Stitch design) */}
+      {/* Sticky Bottom Action Bar for Mobile: 1-Click WhatsApp Booking */}
       <div className="fixed bottom-0 inset-x-0 z-40 w-full bg-white/95 backdrop-blur-xl border-t border-hair lg:hidden pb-safe">
         <div className="flex items-center gap-2.5 px-4 py-2.5">
           <button
             onClick={() => toggleFavourite(product)}
-            className="flex items-center justify-center gap-1.5 h-11 px-4 rounded-lg bg-paper text-ink font-mono font-bold text-xs uppercase active:scale-95 transition-transform border border-hair"
+            className="flex items-center justify-center gap-1.5 h-11 px-3.5 rounded-lg bg-paper text-ink font-mono font-bold text-xs uppercase active:scale-95 transition-transform border border-hair"
             type="button"
+            aria-label="Wishlist"
           >
             <Heart
               className={`w-4 h-4 ${favorited ? "fill-red text-red" : "text-ink"}`}
             />
-            <span>Wishlist</span>
           </button>
 
-          <button
-            onClick={handleAddToCart}
-            className={`flex-1 h-11 rounded-lg text-white font-mono font-bold text-xs uppercase active:scale-95 transition-all flex items-center justify-center gap-1.5 ${
-              addedAnimation ? "bg-red" : "bg-ink"
-            }`}
-            type="button"
+          <a
+            href={buildWhatsAppLink(product.name, selectedSize, product.price)}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex-1 h-11 rounded-lg text-white font-mono font-bold text-xs uppercase active:scale-95 transition-all flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#20ba5a] shadow-md"
           >
-            <span>{addedAnimation ? "ADDED TO BAG ✓" : "ADD TO BAG"}</span>
-          </button>
+            <MessageCircle className="w-4 h-4 fill-white text-white" />
+            <span>BOOK ON WHATSAPP ({formatPrice(product.price)})</span>
+          </a>
         </div>
       </div>
 
